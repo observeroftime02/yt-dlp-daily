@@ -22,7 +22,7 @@ from .utils import (
 )
 from .version import UPDATE_HINT, VARIANT, __version__
 
-REPOSITORY = 'yt-dlp/yt-dlp'
+REPOSITORY = 'observeroftime01/yt-dlp'
 API_URL = f'https://api.github.com/repos/{REPOSITORY}/releases'
 
 
@@ -185,14 +185,17 @@ class Updater:
         """Report whether there is an update available"""
         try:
             self.ydl.to_screen(
-                f'Latest version: {self.latest_version}, Current version: {self.current_version}')
+                f'Latest unofficial version: {self.latest_version}, Current unofficial version: {self.current_version}')
             if not self.has_update:
                 if self._tag == 'latest':
-                    return self.ydl.to_screen(f'yt-dlp is up to date ({__version__})')
+                    return self.ydl.to_screen(f'yt-dlp unofficial is up to date ({__version__})')
                 return self.ydl.report_warning(
                     'yt-dlp cannot be updated any further since you are on an older Python version')
         except Exception:
             return self._report_network_error('obtain version info', delim='; Please try again later or')
+
+        if not self.has_update:
+            return self.ydl.to_screen(f'yt-dlp unofficial is up to date ({__version__})')
 
         if not is_non_updateable():
             self.ydl.to_screen(f'Current Build Hash {_sha256_file(self.filename)}')
@@ -272,7 +275,7 @@ class Updater:
                 return self._report_error(
                     f'Unable to set permissions. Run: sudo chmod a+rx {compat_shlex_quote(self.filename)}')
 
-        self.ydl.to_screen(f'Updated yt-dlp to version {self.new_version}')
+        self.ydl.to_screen(f'Updated yt-dlp unofficial to version {self.new_version}')
         return True
 
     @functools.cached_property
