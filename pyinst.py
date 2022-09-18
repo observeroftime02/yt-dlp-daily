@@ -135,7 +135,7 @@ def windows_set_version(exe, version):
         kids=[
             StringFileInfo([StringTable('040904B0', [
                 StringStruct('Comments', 'yt-dlp%s Command Line Interface' % suffix),
-                StringStruct('CompanyName', 'https://github.com/observeroftime10),
+                StringStruct('CompanyName', 'https://github.com/observeroftime10'),
                 StringStruct('FileDescription', 'yt-dlp%s' % (MACHINE and f' ({MACHINE})')),
                 StringStruct('FileVersion', version),
                 StringStruct('InternalName', f'yt-dlp{suffix}'),
