@@ -2426,6 +2426,8 @@ class YoutubeDL:
             for key in live_keys:
                 if info_dict.get(key) is None:
                     info_dict[key] = (live_status == key)
+        if live_status == 'post_live':
+            info_dict['was_live'] = True
 
         # Auto generate title fields corresponding to the *_number fields when missing
         # in order to always have clean titles. This is very common for TV series.
@@ -2523,11 +2525,7 @@ class YoutubeDL:
         info_dict['requested_subtitles'] = self.process_subtitles(
             info_dict['id'], subtitles, automatic_captions)
 
-        if info_dict.get('formats') is None:
-            # There's only one format available
-            formats = [info_dict]
-        else:
-            formats = info_dict['formats']
+        formats = self._get_formats(info_dict)
 
         # or None ensures --clean-infojson removes it
         info_dict['_has_drm'] = any(f.get('has_drm') for f in formats) or None
@@ -2642,7 +2640,7 @@ class YoutubeDL:
         info_dict, _ = self.pre_process(info_dict, 'after_filter')
 
         # The pre-processors may have modified the formats
-        formats = info_dict.get('formats', [info_dict])
+        formats = self._get_formats(info_dict)
 
         list_only = self.params.get('simulate') is None and (
             self.params.get('list_thumbnails') or self.params.get('listformats') or self.params.get('listsubtitles'))
@@ -3569,11 +3567,17 @@ class YoutubeDL:
             res += '~' + format_bytes(fdict['filesize_approx'])
         return res
 
-    def render_formats_table(self, info_dict):
-        if not info_dict.get('formats') and not info_dict.get('url'):
-            return None
+    def _get_formats(self, info_dict):
+        if info_dict.get('formats') is None:
+            if info_dict.get('url') and info_dict.get('_type', 'video') == 'video':
+                return [info_dict]
+            return []
+        return info_dict['formats']
 
-        formats = info_dict.get('formats', [info_dict])
+    def render_formats_table(self, info_dict):
+        formats = self._get_formats(info_dict)
+        if not formats:
+            return
         if not self.params.get('listformats_table', True) is not False:
             table = [
                 [
@@ -3640,7 +3644,7 @@ class YoutubeDL:
             return None
         return render_table(
             self._list_format_headers('ID', 'Width', 'Height', 'URL'),
-            [[t.get('id'), t.get('width', 'unknown'), t.get('height', 'unknown'), t['url']] for t in thumbnails])
+            [[t.get('id'), t.get('width') or 'unknown', t.get('height') or 'unknown', t['url']] for t in thumbnails])
 
     def render_subtitles_table(self, video_id, subtitles):
         def _row(lang, formats):
@@ -3683,6 +3687,8 @@ class YoutubeDL:
         if not self.params.get('verbose'):
             return
 
+        from . import _IN_CLI  # Must be delayed import
+
         # These imports can be slow. So import them only as needed
         from .extractor.extractors import _LAZY_LOADER
         from .extractor.extractors import _PLUGIN_CLASSES as plugin_extractors
@@ -3719,6 +3725,7 @@ class YoutubeDL:
             __version__,
             f'[{RELEASE_GIT_HEAD}]' if RELEASE_GIT_HEAD else '',
             '' if source == 'unknown' else f'({source})',
+            '' if _IN_CLI else 'API',
             delim=' '))
         if not _LAZY_LOADER:
             if os.environ.get('YTDLP_NO_LAZY_EXTRACTORS'):

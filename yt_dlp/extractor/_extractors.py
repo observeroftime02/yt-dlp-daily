@@ -220,6 +220,7 @@ from .bokecc import BokeCCIE
 from .bongacams import BongaCamsIE
 from .bostonglobe import BostonGlobeIE
 from .box import BoxIE
+from .booyah import BooyahClipsIE
 from .bpb import BpbIE
 from .br import (
     BRIE,
@@ -233,6 +234,7 @@ from .brightcove import (
     BrightcoveNewIE,
 )
 from .businessinsider import BusinessInsiderIE
+from .bundesliga import BundesligaIE
 from .buzzfeed import BuzzFeedIE
 from .byutv import BYUtvIE
 from .c56 import C56IE
@@ -332,6 +334,7 @@ from .cnn import (
     CNNIE,
     CNNBlogsIE,
     CNNArticleIE,
+    CNNIndonesiaIE,
 )
 from .coub import CoubIE
 from .comedycentral import (
@@ -410,7 +413,7 @@ from .deezer import (
     DeezerAlbumIE,
 )
 from .democracynow import DemocracynowIE
-from .detik import Detik20IE
+from .detik import DetikEmbedIE
 from .dfb import DFBIE
 from .dhm import DHMIE
 from .digg import DiggIE
@@ -437,6 +440,7 @@ from .dplay import (
     AnimalPlanetIE,
     TLCIE,
     MotorTrendIE,
+    MotorTrendOnDemandIE,
     DiscoveryPlusIndiaIE,
     DiscoveryNetworksDeIE,
     DiscoveryPlusItalyIE,
@@ -754,6 +758,7 @@ from .islamchannel import (
     IslamChannelIE,
     IslamChannelSeriesIE,
 )
+from .israelnationalnews import IsraelNationalNewsIE
 from .itprotv import (
     ITProTVIE,
     ITProTVCourseIE
@@ -959,6 +964,7 @@ from .microsoftvirtualacademy import (
     MicrosoftVirtualAcademyIE,
     MicrosoftVirtualAcademyCourseIE,
 )
+from .microsoftembed import MicrosoftEmbedIE
 from .mildom import (
     MildomIE,
     MildomVodIE,
@@ -1233,6 +1239,7 @@ from .olympics import OlympicsReplayIE
 from .on24 import On24IE
 from .ondemandkorea import OnDemandKoreaIE
 from .onefootball import OneFootballIE
+from .onenewsnz import OneNewsNZIE
 from .onet import (
     OnetIE,
     OnetChannelIE,
@@ -1381,6 +1388,7 @@ from .puhutv import (
     PuhuTVIE,
     PuhuTVSerieIE,
 )
+from .prankcast import PrankCastIE
 from .premiershiprugby import PremiershipRugbyIE
 from .presstv import PressTVIE
 from .projectveritas import ProjectVeritasIE
