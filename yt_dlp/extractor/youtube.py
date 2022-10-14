@@ -948,9 +948,9 @@ class YoutubeBaseInfoExtractor(InfoExtractor):
             'uploader': uploader,
             'channel_id': channel_id,
             'thumbnails': thumbnails,
-            'upload_date': (strftime_or_none(self._parse_time_text(time_text), '%Y%m%d')
-                            if self._configuration_arg('approximate_date', ie_key='youtubetab')
-                            else None),
+            'timestamp': (self._parse_time_text(time_text)
+                          if self._configuration_arg('approximate_date', ie_key=YoutubeTabIE)
+                          else None),
             'release_timestamp': scheduled_timestamp,
             'availability':
                 'public' if self._has_badge(badges, BadgeType.AVAILABILITY_PUBLIC)
@@ -3684,17 +3684,13 @@ class YoutubeIE(YoutubeBaseInfoExtractor):
             is_live = get_first(live_broadcast_details, 'isLiveNow')
         live_content = get_first(video_details, 'isLiveContent')
         is_upcoming = get_first(video_details, 'isUpcoming')
-        if is_live is None and is_upcoming or live_content is False:
-            is_live = False
-        if is_upcoming is None and (live_content or is_live):
-            is_upcoming = False
         post_live = get_first(video_details, 'isPostLiveDvr')
         live_status = ('post_live' if post_live
                        else 'is_live' if is_live
                        else 'is_upcoming' if is_upcoming
-                       else None if None in (is_live, is_upcoming, live_content)
-                       else 'was_live' if live_content else 'not_live')
-
+                       else 'was_live' if live_content
+                       else 'not_live' if False in (is_live, live_content)
+                       else None)
         streaming_data = traverse_obj(player_responses, (..., 'streamingData'), default=[])
         *formats, subtitles = self._extract_formats_and_subtitles(streaming_data, video_id, player_url, live_status, duration)
 
@@ -6105,9 +6101,9 @@ class YoutubeNotificationsIE(YoutubeTabBaseInfoExtractor):
         title = self._search_regex(
             rf'{re.escape(channel or "")}[^:]+: (.+)', notification_title,
             'video title', default=None)
-        upload_date = (strftime_or_none(self._parse_time_text(self._get_text(notification, 'sentTimeText')), '%Y%m%d')
-                       if self._configuration_arg('approximate_date', ie_key=YoutubeTabIE.ie_key())
-                       else None)
+        timestamp = (self._parse_time_text(self._get_text(notification, 'sentTimeText'))
+                     if self._configuration_arg('approximate_date', ie_key=YoutubeTabIE)
+                     else None)
         return {
             '_type': 'url',
             'url': url,
@@ -6117,7 +6113,7 @@ class YoutubeNotificationsIE(YoutubeTabBaseInfoExtractor):
             'channel_id': channel_id,
             'channel': channel,
             'thumbnails': self._extract_thumbnails(notification, 'videoThumbnail'),
-            'upload_date': upload_date,
+            'timestamp': timestamp,
         }
 
     def _notification_menu_entries(self, ytcfg):
