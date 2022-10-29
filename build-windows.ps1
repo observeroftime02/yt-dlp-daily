@@ -2,7 +2,7 @@ Remove-Item -LiteralPath ".\dist\" -Force -Recurse
 python devscripts/update-version.py
 python devscripts/make_lazy_extractors.py
 python -m pip install --upgrade pip setuptools wheel "py2exe<0.12"
-pip install "https://observeroftime01.github.io/Pyinstaller-Builds/x86_64/pyinstaller-5.5-py3-none-any.whl" -r requirements.txt
+pip install "https://observeroftime01.github.io/Pyinstaller-Builds/x86_64/pyinstaller-5.6.1-py3-none-any.whl" -r requirements.txt
 python setup.py py2exe
 Move-Item ./dist/yt-dlp.exe ./dist/yt-dlp_min.exe
 python pyinst.py
