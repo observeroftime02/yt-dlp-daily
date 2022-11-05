@@ -129,8 +129,6 @@ setup(
     project_urls={
         'Documentation': 'https://github.com/observeroftime01/yt-dlp#readme',
         'Source': 'https://github.com/observeroftime01/yt-dlp',
-        'Tracker': 'https://github.com/observeroftime01/yt-dlp/issues',
-        'Funding': 'https://github.com/observeroftime01/yt-dlp/blob/master/Collaborators.md#collaborators',
     },
     classifiers=[
         'Topic :: Multimedia :: Video',
