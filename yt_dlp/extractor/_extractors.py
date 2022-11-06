@@ -372,8 +372,6 @@ from .crowdbunker import (
     CrowdBunkerChannelIE,
 )
 from .crunchyroll import (
-    CrunchyrollIE,
-    CrunchyrollShowPlaylistIE,
     CrunchyrollBetaIE,
     CrunchyrollBetaShowIE,
 )
@@ -470,6 +468,10 @@ from .duboku import (
 )
 from .dumpert import DumpertIE
 from .defense import DefenseGouvFrIE
+from .deuxm import (
+    DeuxMIE,
+    DeuxMNewsIE
+)
 from .digitalconcerthall import DigitalConcertHallIE
 from .discovery import DiscoveryIE
 from .disney import DisneyIE
@@ -586,6 +588,7 @@ from .foxgay import FoxgayIE
 from .foxnews import (
     FoxNewsIE,
     FoxNewsArticleIE,
+    FoxNewsVideoIE,
 )
 from .foxsports import FoxSportsIE
 from .fptplay import FptplayIE
@@ -908,6 +911,7 @@ from .linkedin import (
 )
 from .linuxacademy import LinuxAcademyIE
 from .liputan6 import Liputan6IE
+from .listennotes import ListenNotesIE
 from .litv import LiTVIE
 from .livejournal import LiveJournalIE
 from .livestream import (
@@ -1427,6 +1431,7 @@ from .prx import (
 )
 from .puls4 import Puls4IE
 from .pyvideo import PyvideoIE
+from .qingting import QingTingIE
 from .qqmusic import (
     QQMusicIE,
     QQMusicSingerIE,
@@ -1640,7 +1645,6 @@ from .skyit import (
     SkyItVideoIE,
     SkyItVideoLiveIE,
     SkyItIE,
-    SkyItAcademyIE,
     SkyItArteIE,
     CieloTVItIE,
     TV8ItIE,
@@ -1760,6 +1764,7 @@ from .svt import (
     SVTPlayIE,
     SVTSeriesIE,
 )
+from .swearnet import SwearnetEpisodeIE
 from .swrmediathek import SWRMediathekIE
 from .syvdk import SYVDKIE
 from .syfy import SyfyIE
@@ -1960,7 +1965,8 @@ from .tvp import (
     TVPEmbedIE,
     TVPIE,
     TVPStreamIE,
-    TVPWebsiteIE,
+    TVPVODSeriesIE,
+    TVPVODVideoIE,
 )
 from .tvplay import (
     TVPlayIE,
