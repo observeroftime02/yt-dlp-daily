@@ -4,7 +4,7 @@ from ..utils import traverse_obj
 
 
 class OfTVIE(InfoExtractor):
-    _VALID_URL = r'https?://(?:www\.)?of.tv/video/(?P<id>[0-9a-zA-Z]+)'
+    _VALID_URL = r'https?://(?:www\.)?of.tv/video/(?P<id>\w+)'
     _TESTS = [{
         'url': 'https://of.tv/video/627d7d95b353db0001dadd1a',
         'md5': 'cb9cd5db3bb9ee0d32bfd7e373d6ef0a',
@@ -14,21 +14,23 @@ class OfTVIE(InfoExtractor):
             'title': 'E1: Jacky vs Eric',
             'thumbnail': r're:^https?://.*\.jpg',
             'average_rating': 0,
-            'description': 'Singer Jacky Romero and actor Eric Guilmette must step out of their comfort zones in order to take on the ultimate comfort food: the Monte Cristo sandwich. With only 30 minutes to deliver the perfect blend of sweet and savory,\xa0Jacky and Eric need all the help they can get to impress Chef JoJo and move on to the next round.\xa0\r\n\r\nSubscribe to the cast on OF:\r\nof.com/jackyromero \r\nof.com/eric_g \r\nof.com/grandmasterchefjojo',
+            'description': 'md5:dd16e3e2a8d27d922e7a989f85986853',
             'display_id': '',
             'duration': 1423,
             'timestamp': 1652391300,
             'upload_date': '20220512',
-            'view_count': 0
+            'view_count': 0,
+            'creator': 'This is Fire'
         }
     }]
 
     def _real_extract(self, url):
         video_id = self._match_id(url)
         webpage = self._download_webpage(url, video_id)
-        extraction = ZypeIE.extract_from_webpage(self._downloader, url, webpage)
-        output = list(extraction)[0]
-        return output
+        info = next(ZypeIE.extract_from_webpage(self._downloader, url, webpage))
+        info['_type'] = 'url_transparent'
+        info['creator'] = self._search_regex(r'<a[^>]+class=\"creator-name\"[^>]+>([^<]+)', webpage, 'creator')
+        return info
 
 
 class OfTVPlaylistIE(InfoExtractor):
@@ -44,7 +46,9 @@ class OfTVPlaylistIE(InfoExtractor):
     def _real_extract(self, url):
         playlist_id = self._match_id(url)
         webpage = self._download_webpage(url, playlist_id)
-        playlists_match = self._search_regex(r'var\s*remaining_videos\s*=\s*(\[.+?\])\s*;', webpage, 'oftv playlists')
-        remaining_videos = self._parse_json(playlists_match, playlist_id)
-        filtered = traverse_obj(remaining_videos, (..., "discovery_url", ))
-        return self.playlist_from_matches(filtered, playlist_id)
+
+        json_match = self._search_json(
+            r'var\s*remaining_videos\s*=', webpage, 'oftv playlists', playlist_id, contains_pattern=r'\[.+\]')
+
+        return self.playlist_from_matches(
+            traverse_obj(json_match, (..., 'discovery_url')), playlist_id)
