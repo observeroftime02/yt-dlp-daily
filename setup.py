@@ -110,6 +110,7 @@ class build_lazy_extractors(Command):
             return
         subprocess.run([sys.executable, 'devscripts/make_lazy_extractors.py'])
 
+
 def main():
     if sys.argv[1:2] == ['py2exe']:
         params = py2exe_params()
