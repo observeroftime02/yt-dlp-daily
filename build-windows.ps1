@@ -15,7 +15,7 @@ echo "yt-dlp.exe: $((Get-FileHash dist\yt-dlp.exe -Algorithm SHA512).Hash.ToLowe
 echo "yt-dlp_win.zip: $((Get-FileHash dist\yt-dlp_win.zip -Algorithm SHA256).Hash.ToLower())" >> ./dist/SHA256SUM.txt
 echo "yt-dlp_win.zip: $((Get-FileHash dist\yt-dlp_win.zip -Algorithm SHA512).Hash.ToLower())" >> ./dist/SHA512SUM.txt
 <#
-.installation
+.installation instruction
 
 uncomment and modify the path below to have the script automatically update your local executable
 
