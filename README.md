@@ -6,7 +6,7 @@
 [![License: Unlicense](https://img.shields.io/badge/-Unlicense-brightgreen.svg?style=for-the-badge)](LICENSE "License")
 [![Release version](https://img.shields.io/github/v/release/observeroftime01/yt-dlp?color=brightgreen&label=Download&style=for-the-badge)](#installation "Installation")
 [![Supported Sites](https://img.shields.io/badge/-Supported_Sites-brightgreen.svg?style=for-the-badge)](supportedsites.md "Supported Sites")
-[![CI Status](https://img.shields.io/github/workflow/status/observeroftime01/yt-dlp/Core%20Tests/master?label=Tests&style=for-the-badge)](https://github.com/observeroftime01/yt-dlp/actions "CI Status")
+[![CI Status](https://img.shields.io/github/actions/workflow/status/observeroftime01/yt-dlp/core.yml?branch=master&label=Tests&style=for-the-badge)](https://github.com/yt-dlp/yt-dlp/actions "CI Status")
 [![Commits](https://img.shields.io/github/commit-activity/m/observeroftime01/yt-dlp?label=commits&style=for-the-badge)](https://github.com/observeroftime01/yt-dlp/commits "Commit History")
 [![Last Commit](https://img.shields.io/github/last-commit/observeroftime01/yt-dlp/master?label=&style=for-the-badge)](https://github.com/observeroftime01/yt-dlp/commits "Commit History")
 
