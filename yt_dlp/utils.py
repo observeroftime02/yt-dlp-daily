@@ -5484,7 +5484,7 @@ def traverse_obj(
         branching = False
         result = None
 
-        if obj is None:
+        if obj is None and traverse_string:
             pass
 
         elif key is None:
