@@ -257,6 +257,7 @@ jobs:
           python -m pip install -U pip setuptools wheel py2exe
           pip install "https://observeroftime01.github.io/Pyinstaller-Builds/x86_64/pyinstaller-5.7.0-py3-none-any.whl" -r requirements.txt
 
+
     - name: Prepare
       run: |
           python devscripts/update-version.py ${{ needs.prepare.outputs.version_suffix }}
