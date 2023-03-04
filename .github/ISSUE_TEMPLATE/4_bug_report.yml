@@ -19,7 +19,6 @@ body:
         - label: I'm reporting a bug unrelated to a specific site
           required: true
         - label: I've verified that I'm running yt-dlp version **2023.02.19.050339** ([update instructions](https://github.com/yt-dlp/yt-dlp#update)) or later (specify commit)
-          required: true
         - label: I've checked that all provided URLs are playable in a browser with the same IP and same login details
           required: true
         - label: I've checked that all URLs and arguments with special characters are [properly quoted or escaped](https://github.com/yt-dlp/yt-dlp/wiki/FAQ#video-url-contains-an-ampersand--and-im-getting-some-strange-output-1-2839-or-v-is-not-recognized-as-an-internal-or-external-command)
