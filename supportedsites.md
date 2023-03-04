@@ -696,6 +696,7 @@
  - **LoveHomePorn**
  - **LRTStream**
  - **LRTVOD**
+ - **Lumni**
  - **lynda**: [*lynda*](## "netrc machine") lynda.com videos
  - **lynda:course**: [*lynda*](## "netrc machine") lynda.com online courses
  - **m6**
@@ -1695,6 +1696,7 @@
  - **XTubeUser**: XTube user profile
  - **Xuite**: 隨意窩Xuite影音
  - **XVideos**
+ - **xvideos:quickies**
  - **XXXYMovies**
  - **Yahoo**: Yahoo screen and movies
  - **yahoo:gyao**
