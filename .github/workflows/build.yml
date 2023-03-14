@@ -13,19 +13,19 @@ on:
         default: true
         type: boolean
       linux_arm:
-        default: true
-        type: boolean
-      macos:
         default: false
         type: boolean
-      macos_legacy:
+      macos:
         default: true
+        type: boolean
+      macos_legacy:
+        default: false
         type: boolean
       windows:
-        default: true
+        default: false
         type: boolean
       windows32:
-        default: true
+        default: false
         type: boolean
       meta_files:
         default: true
