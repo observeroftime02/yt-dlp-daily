@@ -16,7 +16,7 @@ on:
         default: true
         type: boolean
       macos:
-        default: false
+        default: true
         type: boolean
       macos_legacy:
         default: true
@@ -55,7 +55,7 @@ on:
         type: boolean
       macos:
         description: yt-dlp_macos, yt-dlp_macos.zip
-        default: false
+        default: true
         type: boolean
       macos_legacy:
         description: yt-dlp_macos_legacy
