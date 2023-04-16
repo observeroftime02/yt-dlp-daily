@@ -8,7 +8,7 @@ rm ./yt-dlp
 printf "${GREEN}Installing dependencies${NC}\n"
 apt-get -y install zip pandoc man
 python3 -m pip install -U pip setuptools wheel twine
-python3 -m pip install -U "https://observeroftime01.github.io/Pyinstaller-Builds/x86_64/pyinstaller-5.9.0-py3-none-any.whl" -r requirements.txt
+python3 -m pip install -U "https://observeroftime01.github.io/Pyinstaller-Builds/x86_64/pyinstaller-5.10.1-py3-none-any.whl" -r requirements.txt
 printf "${GREEN}Preparing for build${NC}\n"
 python3 devscripts/update-version.py
 python3 devscripts/make_lazy_extractors.py
