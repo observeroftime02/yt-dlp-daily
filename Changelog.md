@@ -4,6 +4,28 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2023.05.02.053521
+
+#### Core changes
+- [Merge pull request #8 from observeroftime02/release](https://github.com/yt-dlp/yt-dlp/commit/af88fd8b8797bcdad701d7ac64fcac70342aac81) by [pukkandan](https://github.com/pukkandan)
+- [Update release-nightly.yml](https://github.com/yt-dlp/yt-dlp/commit/bb04331e6485a80074827c2f31d0694d43eeeef3) by [pukkandan](https://github.com/pukkandan)
+- [Update release-nightly.yml](https://github.com/yt-dlp/yt-dlp/commit/29bd29c89f73541d300d61fd1fa40ccb806140dd) by [pukkandan](https://github.com/pukkandan)
+- [Update release-nightly.yml](https://github.com/yt-dlp/yt-dlp/commit/52bd8946408473e0dd0d184919aebb4d6fc61d84) by [pukkandan](https://github.com/pukkandan)
+- Merge branch 'yt-dlp
+    - [master' into master](https://github.com/yt-dlp/yt-dlp/commit/603457fd75536742e44d73379b33ec8e4b586b4f) by [pukkandan](https://github.com/pukkandan)
+    - [master' into master](https://github.com/yt-dlp/yt-dlp/commit/210c2ab0f5443d3562e3b18c75cff5e721adab04) by [pukkandan](https://github.com/pukkandan)
+    - [master' into master](https://github.com/yt-dlp/yt-dlp/commit/4047bddce864e28bd79fb6f8a9b8b067600e3579) by [pukkandan](https://github.com/pukkandan)
+- utils
+    - `traverse_obj`: [More fixes](https://github.com/yt-dlp/yt-dlp/commit/b079c26f0af8085bccdadc72c61c8164ca5ab0f8) ([#6959](https://github.com/yt-dlp/yt-dlp/issues/6959)) by [Grub4K](https://github.com/Grub4K)
+
+#### Extractor changes
+- dlf
+    - [Add extractors](https://github.com/yt-dlp/yt-dlp/commit/b423b6a48e0b19260bc95ab7d72d2138d7f124dc) ([#6697](https://github.com/yt-dlp/yt-dlp/issues/6697)) by [nick-cd](https://github.com/nick-cd)
+- reddit
+    - [Add login support](https://github.com/yt-dlp/yt-dlp/commit/4d9280c9c853733534dda60486fa949bcca36c9e) ([#6950](https://github.com/yt-dlp/yt-dlp/issues/6950)) by [bashonly](https://github.com/bashonly)
+- twitter
+    - [Default to GraphQL, handle auth errors](https://github.com/yt-dlp/yt-dlp/commit/147e62fc584c3ea6fdb09bb7a47905df68553a22) ([#6957](https://github.com/yt-dlp/yt-dlp/issues/6957)) by [bashonly](https://github.com/bashonly)
+
 ### 2023.04.29.034632
 
 #### Core changes
