@@ -258,6 +258,7 @@
  - **CiscoLiveSession**
  - **ciscowebex**: Cisco Webex
  - **CJSW**
+ - **Clipchamp**
  - **cliphunter**
  - **Clippit**
  - **ClipRs**
@@ -348,6 +349,8 @@
  - **DiscoveryPlusItalyShow**
  - **Disney**
  - **DIYNetwork**
+ - **dlf**
+ - **dlf:corpus**: DLF Multi-feed Archives
  - **dlive:stream**
  - **dlive:vod**
  - **Dotsub**
@@ -1163,7 +1166,7 @@
  - **RedBullEmbed**
  - **RedBullTV**
  - **RedBullTVRrnContent**
- - **Reddit**
+ - **Reddit**: [*reddit*](## "netrc machine")
  - **RedGifs**
  - **RedGifsSearch**: Redgifs search
  - **RedGifsUser**: Redgifs user
