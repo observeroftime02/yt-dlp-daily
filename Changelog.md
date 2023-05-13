@@ -4,6 +4,48 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2023.05.13.031715
+
+#### Core changes
+- [Merge pull request #8 from observeroftime02/release](https://github.com/yt-dlp/yt-dlp/commit/af88fd8b8797bcdad701d7ac64fcac70342aac81) by [pukkandan](https://github.com/pukkandan)
+- [Update release-nightly.yml](https://github.com/yt-dlp/yt-dlp/commit/bb04331e6485a80074827c2f31d0694d43eeeef3) by [pukkandan](https://github.com/pukkandan)
+- [Update release-nightly.yml](https://github.com/yt-dlp/yt-dlp/commit/29bd29c89f73541d300d61fd1fa40ccb806140dd) by [pukkandan](https://github.com/pukkandan)
+- [Update release-nightly.yml](https://github.com/yt-dlp/yt-dlp/commit/52bd8946408473e0dd0d184919aebb4d6fc61d84) by [pukkandan](https://github.com/pukkandan)
+- Merge branch 'yt-dlp
+    - [master' into master](https://github.com/yt-dlp/yt-dlp/commit/603457fd75536742e44d73379b33ec8e4b586b4f) by [pukkandan](https://github.com/pukkandan)
+    - [master' into master](https://github.com/yt-dlp/yt-dlp/commit/210c2ab0f5443d3562e3b18c75cff5e721adab04) by [pukkandan](https://github.com/pukkandan)
+    - [master' into master](https://github.com/yt-dlp/yt-dlp/commit/4047bddce864e28bd79fb6f8a9b8b067600e3579) by [pukkandan](https://github.com/pukkandan)
+    - [master' into master](https://github.com/yt-dlp/yt-dlp/commit/722e6b5e312532622ecaac6b8334b30a25bc2b2b) by [pukkandan](https://github.com/pukkandan)
+    - [master' into master](https://github.com/yt-dlp/yt-dlp/commit/4ee86dfd9878a6a216d0247fc1d49ddcfc28c7b5) by [pukkandan](https://github.com/pukkandan)
+    - [master' into master](https://github.com/yt-dlp/yt-dlp/commit/e1f76235e054f2712da7254a508904230fd23321) by [pukkandan](https://github.com/pukkandan)
+    - [master' into master](https://github.com/yt-dlp/yt-dlp/commit/3738658b37a107793721091b7ae7b060a66a1769) by [pukkandan](https://github.com/pukkandan)
+    - [master' into master](https://github.com/yt-dlp/yt-dlp/commit/a2f6aa04e4aed3cfef207aac19d14424bd517e0b) by [pukkandan](https://github.com/pukkandan)
+- utils
+    - `locked_file`: [Fix for virtiofs](https://github.com/yt-dlp/yt-dlp/commit/45998b3e371b819ce0dbe50da703809a048cc2fe) ([#6840](https://github.com/yt-dlp/yt-dlp/issues/6840)) by [brandon-dacrib](https://github.com/brandon-dacrib)
+    - `traverse_obj`: [More fixes](https://github.com/yt-dlp/yt-dlp/commit/b079c26f0af8085bccdadc72c61c8164ca5ab0f8) ([#6959](https://github.com/yt-dlp/yt-dlp/issues/6959)) by [Grub4K](https://github.com/Grub4K)
+
+#### Extractor changes
+- abematv
+    - [Add fallback for title and description extraction and extract more metadata](https://github.com/yt-dlp/yt-dlp/commit/c449c0655d7c8549e6e1389c26b628053b253d39) ([#6994](https://github.com/yt-dlp/yt-dlp/issues/6994)) by [Lesmiscore](https://github.com/Lesmiscore)
+- clipchamp
+    - [Add extractor](https://github.com/yt-dlp/yt-dlp/commit/2f07c4c1da4361af213e5791279b9d152d2e4ce3) ([#6978](https://github.com/yt-dlp/yt-dlp/issues/6978)) by [bashonly](https://github.com/bashonly)
+- dlf
+    - [Add extractors](https://github.com/yt-dlp/yt-dlp/commit/b423b6a48e0b19260bc95ab7d72d2138d7f124dc) ([#6697](https://github.com/yt-dlp/yt-dlp/issues/6697)) by [nick-cd](https://github.com/nick-cd)
+- facebook
+    - [Fix metadata extraction](https://github.com/yt-dlp/yt-dlp/commit/3b52a606881e6adadc33444abdeacce562b79330) ([#6856](https://github.com/yt-dlp/yt-dlp/issues/6856)) by [ringus1](https://github.com/ringus1)
+- iwara
+    - [Implement login](https://github.com/yt-dlp/yt-dlp/commit/21b9413cf7dd4830b2ece57af21589dd4538fc52) ([#6721](https://github.com/yt-dlp/yt-dlp/issues/6721)) by [toomyzoom](https://github.com/toomyzoom)
+- reddit
+    - [Add login support](https://github.com/yt-dlp/yt-dlp/commit/4d9280c9c853733534dda60486fa949bcca36c9e) ([#6950](https://github.com/yt-dlp/yt-dlp/issues/6950)) by [bashonly](https://github.com/bashonly)
+- tvp
+    - [Use new API](https://github.com/yt-dlp/yt-dlp/commit/0c7ce146e4d2a84e656d78f6857952bfd25ab389) ([#6989](https://github.com/yt-dlp/yt-dlp/issues/6989)) by [selfisekai](https://github.com/selfisekai)
+- twitter
+    - [Default to GraphQL, handle auth errors](https://github.com/yt-dlp/yt-dlp/commit/147e62fc584c3ea6fdb09bb7a47905df68553a22) ([#6957](https://github.com/yt-dlp/yt-dlp/issues/6957)) by [bashonly](https://github.com/bashonly)
+- wrestleuniverse
+    - [Fix extraction, add login](https://github.com/yt-dlp/yt-dlp/commit/ef8fb7f029b816dfc95600727d84400591a3b5c5) ([#6982](https://github.com/yt-dlp/yt-dlp/issues/6982)) by [bashonly](https://github.com/bashonly), [Grub4K](https://github.com/Grub4K)
+- youporn
+    - [Extract m3u8 formats](https://github.com/yt-dlp/yt-dlp/commit/ddae33754ae1f32dd9c64cf895c47d20f6b5f336) by [pukkandan](https://github.com/pukkandan)
+
 ### 2023.04.29.034632
 
 #### Core changes
