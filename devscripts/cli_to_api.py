@@ -3,18 +3,51 @@
 # This script was borrowed from here, credit to Pukkandan:
 # https://github.com/yt-dlp/yt-dlp/issues/5859#issuecomment-1363938900
 # It converts CLI arguments to yt-dlp compatible API options
+# Allow direct execution
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import yt_dlp
+import yt_dlp.options
+
+create_parser = yt_dlp.options.create_parser
 
 
-def cli_to_api(*opts):
-    default = yt_dlp.parse_options([]).ydl_opts
-    diff = {k: v for k, v in yt_dlp.parse_options(opts).ydl_opts.items() if default[k] != v}
+def parse_patched_options(opts):
+    patched_parser = create_parser()
+    patched_parser.defaults.update({
+        'ignoreerrors': False,
+        'retries': 0,
+        'fragment_retries': 0,
+        'extract_flat': False,
+        'concat_playlist': 'never',
+    })
+    yt_dlp.options.__dict__['create_parser'] = lambda: patched_parser
+    try:
+        return yt_dlp.parse_options(opts)
+    finally:
+        yt_dlp.options.__dict__['create_parser'] = create_parser
+
+
+default_opts = parse_patched_options([]).ydl_opts
+
+
+def cli_to_api(opts, cli_defaults=False):
+    opts = (yt_dlp.parse_options if cli_defaults else parse_patched_options)(opts).ydl_opts
+
+    diff = {k: v for k, v in opts.items() if default_opts[k] != v}
     if 'postprocessors' in diff:
-        diff['postprocessors'] = [pp for pp in diff['postprocessors'] if pp not in default['postprocessors']]
+        diff['postprocessors'] = [pp for pp in diff['postprocessors']
+                                  if pp not in default_opts['postprocessors']]
     return diff
 
 
-from pprint import pprint
+if __name__ == '__main__':
+    from pprint import pprint
 
-pprint(cli_to_api('-4', '--downloader', 'http,m3u8:aria2c', '--embed-thumb'))  # Change according to your need
+    print('\nThe arguments passed translate to:\n')
+    pprint(cli_to_api(sys.argv[1:]))
+    print('\nCombining these with the CLI defaults gives:\n')
+    pprint(cli_to_api(sys.argv[1:], True))
