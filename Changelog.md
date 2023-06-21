@@ -4,6 +4,20 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2023.06.21.0001
+
+#### Core changes
+- [Fix bug in db3ad8a67661d7b234a6954d9c6a4a9b1749f5eb](https://github.com/yt-dlp/yt-dlp/commit/d7cd97e8d8d42b500fea9abb2aa4ac9b0f98b2ad) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp-master'](https://github.com/yt-dlp/yt-dlp/commit/cd52d07b82b4cb23b00c908e2b9272ee9283ac2c) by [pukkandan](https://github.com/pukkandan)
+- [resolve conflicts](https://github.com/yt-dlp/yt-dlp/commit/dd8b8d4dcd4cf2784ba71d868f6fc0b4dedeb396) by [pukkandan](https://github.com/pukkandan)
+
+#### Extractor changes
+- **dropout**: [Fix season extraction](https://github.com/yt-dlp/yt-dlp/commit/db22142f6f817ff673d417b4b78e8db497bf8ab3) ([#7304](https://github.com/yt-dlp/yt-dlp/issues/7304)) by [OverlordQ](https://github.com/OverlordQ)
+- **nebula**: [Fix extractor](https://github.com/yt-dlp/yt-dlp/commit/3f756c8c4095b942cf49788eb0862ceaf57847f2) ([#7156](https://github.com/yt-dlp/yt-dlp/issues/7156)) by [Lamieur](https://github.com/Lamieur), [rohieb](https://github.com/rohieb)
+
+#### Misc. changes
+- **cleanup**: Miscellaneous: [7f9c6a6](https://github.com/yt-dlp/yt-dlp/commit/7f9c6a63b16e145495479e9f666f5b9e2ee69e2f) by [bashonly](https://github.com/bashonly)
+
 ### 2023.06.21
 
 #### Important changes
