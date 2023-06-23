@@ -4,6 +4,17 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2023.06.22.0001
+
+#### Core changes
+- [Bugfix for b4e0d75848e9447cee2cd3646ce54d4744a7ff56](https://github.com/yt-dlp/yt-dlp/commit/e59e20744eb32ce4b6ea0dece7c673be8376a710) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp-master'](https://github.com/yt-dlp/yt-dlp/commit/359fb2df089e00783f7693ab082e78d7503891cf) by [pukkandan](https://github.com/pukkandan)
+- [resolve conflict](https://github.com/yt-dlp/yt-dlp/commit/8dedac9153d2bb89984c72a473aae7f21bc204c8) by [pukkandan](https://github.com/pukkandan)
+- **utils**: [Update Chrome versions](https://github.com/yt-dlp/yt-dlp/commit/8c154d420b117754007709e5e4685e5991870ddf) by [pukkandan](https://github.com/pukkandan)
+
+#### Extractor changes
+- **youtube**: [Fix comments' `is_favorited`](https://github.com/yt-dlp/yt-dlp/commit/89bed013741a776506f60380b7fd89d27d0710b4) ([#7390](https://github.com/yt-dlp/yt-dlp/issues/7390)) by [bbilly1](https://github.com/bbilly1)
+
 ### 2023.06.22
 
 #### Core changes
