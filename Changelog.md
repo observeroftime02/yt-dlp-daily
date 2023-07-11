@@ -4,6 +4,27 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2023.07.10
+
+#### Core changes
+- [Merge branch 'yt-dlp-master'](https://github.com/yt-dlp/yt-dlp/commit/93c3d2cae34cff18ebe7e6c44e61735a773cec2d) by [pukkandan](https://github.com/pukkandan)
+- [Revert 49296437a8e5fa91dacb5446e51ab588474c85d3](https://github.com/yt-dlp/yt-dlp/commit/b03fa7834579a01cc5fba48c0e73488a16683d48) by [pukkandan](https://github.com/pukkandan)
+- [resolve conflicts](https://github.com/yt-dlp/yt-dlp/commit/88e9e88b5ff692e8013cf5f362be75ef084d4edf) by [pukkandan](https://github.com/pukkandan)
+- Merge branch 'yt-dlp
+    - [master' into master](https://github.com/yt-dlp/yt-dlp/commit/555aedd05c13c7814ac39a21088314917ce63df6) by [pukkandan](https://github.com/pukkandan)
+    - [master' into master](https://github.com/yt-dlp/yt-dlp/commit/96e04c47b453936ef3f76354ba41e86858967f8d) by [pukkandan](https://github.com/pukkandan)
+- **utils**: `clean_podcast_url`: [Handle more trackers](https://github.com/yt-dlp/yt-dlp/commit/2af4eeb77246b8183aae75a0a8d19f18c08115b2) ([#7556](https://github.com/yt-dlp/yt-dlp/issues/7556)) by [bashonly](https://github.com/bashonly), [mabdelfattah](https://github.com/mabdelfattah)
+
+#### Extractor changes
+- **BiliBiliBangumi**: [Fix extractors](https://github.com/yt-dlp/yt-dlp/commit/bdd0b75e3f41ff35440eda6d395008beef19ef2f) ([#7337](https://github.com/yt-dlp/yt-dlp/issues/7337)) by [GD-Slime](https://github.com/GD-Slime)
+- **twitter**: [Fix GraphQL and legacy API](https://github.com/yt-dlp/yt-dlp/commit/92315c03774cfabb3a921884326beb4b981f786b) ([#7516](https://github.com/yt-dlp/yt-dlp/issues/7516)) by [bashonly](https://github.com/bashonly)
+- **vrt**: [Update token signing key](https://github.com/yt-dlp/yt-dlp/commit/325191d0c9bf3fe257b8a7c2eb95080f44f6ddfc) ([#7519](https://github.com/yt-dlp/yt-dlp/issues/7519)) by [Zprokkel](https://github.com/Zprokkel)
+
+#### Misc. changes
+- **build**
+    - [Update to pyinstaller v5.13.0](https://github.com/yt-dlp/yt-dlp/commit/7e8b3b032ed49f03351ed239014f829dd837b706) by [pukkandan](https://github.com/pukkandan)
+    - [Use pyinstaller v5.12.0 for Win32 builds](https://github.com/yt-dlp/yt-dlp/commit/aa8cf8f9f73a39e27852a3421801b847e008ee48) by [pukkandan](https://github.com/pukkandan)
+
 ### 2023.07.06
 
 #### Important changes
