@@ -4,6 +4,36 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2023.11.01.0001
+
+#### Core changes
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/63627b87749498361fe7e282d62df07505f004bf) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/308d91fe4735a9b49a438ba61790db4133c3d9da) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/62c7c4459cf33bf22d120f57b9c1be959a6297bf) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/287ab979032078de9bc13d5ff45a9312fdae0dbc) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/efe22099fc029a0b8d4de8e8d316034ab6b093c5) by [pukkandan](https://github.com/pukkandan)
+- [Only ensure playlist thumbnail dir if writing thumbs](https://github.com/yt-dlp/yt-dlp/commit/a40e0b37dfc8c26916b0e01aa3f29f3bc42250b6) ([#8373](https://github.com/yt-dlp/yt-dlp/issues/8373)) by [bashonly](https://github.com/bashonly)
+
+#### Extractor changes
+- **generic**: [Improve direct video link ext detection](https://github.com/yt-dlp/yt-dlp/commit/4ce2f29a50fcfb9920e6f2ffe42192945a2bad7e) ([#8340](https://github.com/yt-dlp/yt-dlp/issues/8340)) by [bashonly](https://github.com/bashonly)
+- **npo**: [Send `POST` request to streams API endpoint](https://github.com/yt-dlp/yt-dlp/commit/8e02a4dcc800f9444e9d461edc41edd7b662f435) ([#8413](https://github.com/yt-dlp/yt-dlp/issues/8413)) by [bartbroere](https://github.com/bartbroere)
+- **polskieradio**: audition: [Fix playlist extraction](https://github.com/yt-dlp/yt-dlp/commit/464327acdb353ceb91d2115163a5a9621b22fe0d) ([#8459](https://github.com/yt-dlp/yt-dlp/issues/8459)) by [shubhexists](https://github.com/shubhexists)
+- **qdance**: [Update `_VALID_URL`](https://github.com/yt-dlp/yt-dlp/commit/177f0d963e4b9db749805c482e6f288354c8be84) ([#8426](https://github.com/yt-dlp/yt-dlp/issues/8426)) by [bashonly](https://github.com/bashonly)
+- **twitcasting**: [Fix livestream extraction](https://github.com/yt-dlp/yt-dlp/commit/7b8b1cf5eb8bf44ce70bc24e1f56f0dba2737e98) ([#8427](https://github.com/yt-dlp/yt-dlp/issues/8427)) by [JC-Chung](https://github.com/JC-Chung), [saintliao](https://github.com/saintliao)
+- **weverse**: [Fix login error handling](https://github.com/yt-dlp/yt-dlp/commit/4a601c9eff9fb42e24a4c8da3fa03628e035b35b) ([#8458](https://github.com/yt-dlp/yt-dlp/issues/8458)) by [seproDev](https://github.com/seproDev)
+- **youtube**
+    - [Check newly uploaded iOS HLS formats](https://github.com/yt-dlp/yt-dlp/commit/ef79d20dc9d27ac002a7196f073b37f2f2721aed) ([#8336](https://github.com/yt-dlp/yt-dlp/issues/8336)) by [bashonly](https://github.com/bashonly)
+    - [Deprioritize iOS client formats](https://github.com/yt-dlp/yt-dlp/commit/39abae23546160fa98ac2b0c91e3d69fa965b573) ([#8337](https://github.com/yt-dlp/yt-dlp/issues/8337)) by [bashonly](https://github.com/bashonly)
+
+#### Networking changes
+- **Request Handler**: requests: [Add handler for `requests` HTTP library](https://github.com/yt-dlp/yt-dlp/commit/8a8b54523addf46dfd50ef599761a81bc22362e6) ([#3668](https://github.com/yt-dlp/yt-dlp/issues/3668)) by [bashonly](https://github.com/bashonly), [coletdjnz](https://github.com/coletdjnz), [Grub4K](https://github.com/Grub4K) (With fixes in [4e38e2a](https://github.com/yt-dlp/yt-dlp/commit/4e38e2ae9d7380015349e6aee59c78bb3938befd))
+
+#### Misc. changes
+- **build**
+    - [Downgrade pyinstaller for win32 builds](https://github.com/yt-dlp/yt-dlp/commit/68183241dff291165675d5d67b515eb70c7fe616) by [pukkandan](https://github.com/pukkandan)
+    - [Update to pyinstaller v6.1.0 ci skip build ci skip all](https://github.com/yt-dlp/yt-dlp/commit/1588b92cd476cace2b85956ce2bf7a805e954747) by [pukkandan](https://github.com/pukkandan)
+- **ci**: [Run core tests with dependencies](https://github.com/yt-dlp/yt-dlp/commit/700444c23ddb65f618c2abd942acdc0c58c650b1) by [bashonly](https://github.com/bashonly), [coletdjnz](https://github.com/coletdjnz)
+
 ### 2023.10.13
 
 #### Core changes
