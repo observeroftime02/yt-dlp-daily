@@ -718,7 +718,7 @@
  - **lynda:course**: [*lynda*](## "netrc machine") lynda.com online courses
  - **maariv.co.il**
  - **MagellanTV**
- - **MagentaMusik360**
+ - **MagentaMusik**
  - **mailru**: Видео@Mail.Ru
  - **mailru:music**: Музыка@Mail.Ru
  - **mailru:​music:search**: Музыка@Mail.Ru
@@ -1471,7 +1471,6 @@
  - **TuneInPodcast**
  - **TuneInPodcastEpisode**
  - **TuneInStation**
- - **Turbo**
  - **tv.dfb.de**
  - **TV2**
  - **TV2Article**
@@ -1601,6 +1600,7 @@
  - **ViMP:Playlist**
  - **Vine**
  - **vine:user**
+ - **Viously**
  - **Viqeo**
  - **Viu**
  - **viu:ott**: [*viu*](## "netrc machine")

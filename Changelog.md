@@ -4,6 +4,36 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2024.01.19.072540
+
+#### Core changes
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/758b68007fea081f2be8ffad603ce6c03010f7e8) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/8050b70cdd3aeb317d68143031480b4eab407c22) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/3ddfe2dced7fc6822a21900f36cda9cc43959c66) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/8968add7005ade5f2a16c5cb27fce3e5eba214b8) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/3b3254384ed8b52cbe927c2d72c599c92bf113e5) by [pukkandan](https://github.com/pukkandan)
+- **cookies**: [Fix `--cookies-from-browser` with macOS Firefox profiles](https://github.com/yt-dlp/yt-dlp/commit/85b33f5c163f60dbd089a6b9bc2ba1366d3ddf93) ([#8909](https://github.com/yt-dlp/yt-dlp/issues/8909)) by [RalphORama](https://github.com/RalphORama)
+- **utils**: `traverse_obj`: [Support `xml.etree.ElementTree.Element`](https://github.com/yt-dlp/yt-dlp/commit/ffbd4f2a02fee387ea5e0a267ce32df5259111ac) ([#8911](https://github.com/yt-dlp/yt-dlp/issues/8911)) by [Grub4K](https://github.com/Grub4K)
+
+#### Extractor changes
+- **aenetworks**: [Rating should be optional for AP extraction](https://github.com/yt-dlp/yt-dlp/commit/014cb5774d7afe624b6eb4e07f7be924b9e5e186) ([#9005](https://github.com/yt-dlp/yt-dlp/issues/9005)) by [agibson-fl](https://github.com/agibson-fl)
+- **ard**: mediathek: [Revert to using old id](https://github.com/yt-dlp/yt-dlp/commit/b6951271ac014761c9c317b9cecd5e8e139cfa7c) ([#8916](https://github.com/yt-dlp/yt-dlp/issues/8916)) by [Grub4K](https://github.com/Grub4K)
+- **artetv**: [Separate closed captions](https://github.com/yt-dlp/yt-dlp/commit/393b487a4ea391c44e811505ec98531031d7e81e) ([#8231](https://github.com/yt-dlp/yt-dlp/issues/8231)) by [Nicals](https://github.com/Nicals), [seproDev](https://github.com/seproDev)
+- **bigo**: [Fix JSON extraction](https://github.com/yt-dlp/yt-dlp/commit/85a2d07c1f82c2082b568963d1c32ad3fc848f61) ([#8893](https://github.com/yt-dlp/yt-dlp/issues/8893)) by [DmitryScaletta](https://github.com/DmitryScaletta)
+- **biliintl**: [Fix and improve subtitles extraction](https://github.com/yt-dlp/yt-dlp/commit/cf6413e840476c15e5b166dc2f7cc2a90a4a9aad) ([#7077](https://github.com/yt-dlp/yt-dlp/issues/7077)) by [dirkf](https://github.com/dirkf), [HobbyistDev](https://github.com/HobbyistDev), [itachi-19](https://github.com/itachi-19), [seproDev](https://github.com/seproDev)
+- **cloudflarestream**: [Extract subtitles](https://github.com/yt-dlp/yt-dlp/commit/4d9dc0abe24ad5d9d22a16f40fc61137dcd103f7) ([#9007](https://github.com/yt-dlp/yt-dlp/issues/9007)) by [Bibhav48](https://github.com/Bibhav48)
+- **facebook**: [Add new ID format](https://github.com/yt-dlp/yt-dlp/commit/cf9af2c7f1fedd881a157b3fbe725e5494b00924) ([#3824](https://github.com/yt-dlp/yt-dlp/issues/3824)) by [kclauhk](https://github.com/kclauhk), [Wikidepia](https://github.com/Wikidepia)
+- **googledrive**: [Fix source file extraction](https://github.com/yt-dlp/yt-dlp/commit/5498729c59b03a9511c64552da3ba2f802166f8d) ([#8990](https://github.com/yt-dlp/yt-dlp/issues/8990)) by [jazz1611](https://github.com/jazz1611)
+- **magentamusik**: [Add extractor](https://github.com/yt-dlp/yt-dlp/commit/5e2e24b2c5795756d81785b06b10723ddb6db7b2) ([#7790](https://github.com/yt-dlp/yt-dlp/issues/7790)) by [pwaldhauer](https://github.com/pwaldhauer), [seproDev](https://github.com/seproDev)
+- **nhkradirulive**: [Make metadata extraction non-fatal](https://github.com/yt-dlp/yt-dlp/commit/5af1f19787f7d652fce72dd3ab9536cdd980fe85) ([#8956](https://github.com/yt-dlp/yt-dlp/issues/8956)) by [garret1317](https://github.com/garret1317)
+- **piapro**: [Improve `_VALID_URL`](https://github.com/yt-dlp/yt-dlp/commit/8e6e3651727b0b85764857fc6329fe5e0a3f00de) ([#8999](https://github.com/yt-dlp/yt-dlp/issues/8999)) by [FinnRG](https://github.com/FinnRG)
+- **rule34video**: [Extract more metadata](https://github.com/yt-dlp/yt-dlp/commit/fee2d8d9c38f9b5f0a8df347c1e698983339c34d) ([#7416](https://github.com/yt-dlp/yt-dlp/issues/7416)) by [gmes78](https://github.com/gmes78)
+- **twitch**: [Fix m3u8 extraction](https://github.com/yt-dlp/yt-dlp/commit/5b8c69ae04444a4c80a5a99917e40f75a116c3b8) ([#8960](https://github.com/yt-dlp/yt-dlp/issues/8960)) by [DmitryScaletta](https://github.com/DmitryScaletta)
+- **viously**: [Add extractor](https://github.com/yt-dlp/yt-dlp/commit/95e82347b398d8bb160767cdd975edecd62cbabd) ([#8927](https://github.com/yt-dlp/yt-dlp/issues/8927)) by [nbr23](https://github.com/nbr23), [seproDev](https://github.com/seproDev)
+
+#### Misc. changes
+- **cleanup**: [Fix typo in README.md](https://github.com/yt-dlp/yt-dlp/commit/292d60b1ed3b9fe5bcb2775a894cca99b0f9473e) ([#8894](https://github.com/yt-dlp/yt-dlp/issues/8894)) by [antonkesy](https://github.com/antonkesy)
+
 ### 2023.12.30
 
 #### Core changes
