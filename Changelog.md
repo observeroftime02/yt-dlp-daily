@@ -4,6 +4,29 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2024.03.18.045053
+
+#### Core changes
+- [Add new options `--impersonate` and `--list-impersonate-targets`](https://github.com/yt-dlp/yt-dlp/commit/0b81d4d252bd065ccd352722987ea34fe17f9244) by [bashonly](https://github.com/bashonly), [coletdjnz](https://github.com/coletdjnz), [Grub4K](https://github.com/Grub4K), [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'master' into master](https://github.com/yt-dlp/yt-dlp/commit/5347959c81d78d27a4eaf3ea85fe709da2078f0f) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp-master'](https://github.com/yt-dlp/yt-dlp/commit/fa363503dd76a26af2b5e959101ff0794f4330c5) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/173b71cc916710fc9e2e9d08d74e0c8a1696e30d) by [pukkandan](https://github.com/pukkandan)
+- [resolve conflict](https://github.com/yt-dlp/yt-dlp/commit/37305efa4eca2525fd321cdf7ee77d698b71f398) by [pukkandan](https://github.com/pukkandan)
+
+#### Extractor changes
+- **crunchyroll**: [Extract `vo_adaptive_hls` formats by default](https://github.com/yt-dlp/yt-dlp/commit/be77923ffe842f667971019460f6005f3cad01eb) ([#9447](https://github.com/yt-dlp/yt-dlp/issues/9447)) by [bashonly](https://github.com/bashonly)
+- **gofile**: [Fix extractor](https://github.com/yt-dlp/yt-dlp/commit/0da66980d3193cad3dae0120cddddbfcabddf7a1) ([#9446](https://github.com/yt-dlp/yt-dlp/issues/9446)) by [jazz1611](https://github.com/jazz1611)
+- **imgur**: [Fix extraction](https://github.com/yt-dlp/yt-dlp/commit/86d2f4d24849af0d1f3af7c0e2ac43bf8a058f74) ([#9471](https://github.com/yt-dlp/yt-dlp/issues/9471)) by [trwstin](https://github.com/trwstin)
+- **sonylivseries**: [Fix season extraction](https://github.com/yt-dlp/yt-dlp/commit/f2868b26e917354203f82a370ad2396646edb813) ([#9423](https://github.com/yt-dlp/yt-dlp/issues/9423)) by [bashonly](https://github.com/bashonly)
+- **tiktok**: [Update API hostname](https://github.com/yt-dlp/yt-dlp/commit/8c05b3ebae23c5b444857549a85b84004c01a536) ([#9444](https://github.com/yt-dlp/yt-dlp/issues/9444)) by [bashonly](https://github.com/bashonly)
+
+#### Networking changes
+- **Request Handler**: curlcffi: [Add support for `curl_cffi`](https://github.com/yt-dlp/yt-dlp/commit/52f5be1f1e0dc45bb397ab950f564721976a39bf) by [bashonly](https://github.com/bashonly), [coletdjnz](https://github.com/coletdjnz), [Grub4K](https://github.com/Grub4K), [pukkandan](https://github.com/pukkandan)
+
+#### Misc. changes
+- **build**: [Update changelog for tarball and sdist](https://github.com/yt-dlp/yt-dlp/commit/17b96974a334688f76b57d350e07cae8cda46877) ([#9425](https://github.com/yt-dlp/yt-dlp/issues/9425)) by [bashonly](https://github.com/bashonly)
+- **test**: [Workaround websocket server hanging](https://github.com/yt-dlp/yt-dlp/commit/f849d77ab54788446b995d256e1ee0894c4fb927) ([#9467](https://github.com/yt-dlp/yt-dlp/issues/9467)) by [coletdjnz](https://github.com/coletdjnz)
+
 ### 2024.03.10
 
 #### Core changes
