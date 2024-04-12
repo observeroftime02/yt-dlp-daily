@@ -4,6 +4,12 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2024.04.12.021741
+
+#### Core changes
+- [Enable MacOS workflow again...](https://github.com/yt-dlp/yt-dlp/commit/9b19855ce2f4655393eeaaff9e12c7c465811a9b) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/eb07282b8d889c409079af54d09b63cfa7b2d82f) by [pukkandan](https://github.com/pukkandan)
+
 ### 2024.04.09
 
 #### Important changes
