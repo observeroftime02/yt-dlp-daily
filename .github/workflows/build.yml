@@ -362,7 +362,7 @@ jobs:
       - name: Install Requirements
         run: | # Custom pyinstaller built with https://github.com/yt-dlp/pyinstaller-builds
           python devscripts/install_deps.py -o --include build
-          python devscripts/install_deps.py --include py2exe --include curl_cffi
+          python devscripts/install_deps.py --include py2exe --include curl-cffi
           python -m pip install -U "https://observeroftime01.github.io/Pyinstaller-Builds/x86_64/pyinstaller-6.1.0-py3-none-any.whl"
 
       - name: Prepare
