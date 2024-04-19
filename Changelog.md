@@ -4,6 +4,24 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2024.04.19.050853
+
+#### Core changes
+- [Enable MacOS workflow again...](https://github.com/yt-dlp/yt-dlp/commit/9b19855ce2f4655393eeaaff9e12c7c465811a9b) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp-master'](https://github.com/yt-dlp/yt-dlp/commit/61c6d753cf7425b8ca8b5fcb1a02c5b994079039) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/eb07282b8d889c409079af54d09b63cfa7b2d82f) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/56d6eda89d5b5e1fe16c9330c9c8a71c598a31e8) by [pukkandan](https://github.com/pukkandan)
+- [Update build.yml](https://github.com/yt-dlp/yt-dlp/commit/0de2d0a8c48f0649ee144e9de48b8fc017221dd2) by [pukkandan](https://github.com/pukkandan)
+- [resolve conflict](https://github.com/yt-dlp/yt-dlp/commit/95629679bf73f4b653300e96a1f53b60a1c34380) by [pukkandan](https://github.com/pukkandan)
+
+#### Extractor changes
+- **afreecatv**: live: [Add `cdn` extractor-arg](https://github.com/yt-dlp/yt-dlp/commit/315b3544296bb83012e20ee3af9d3cbf5600dd1c) ([#9666](https://github.com/yt-dlp/yt-dlp/issues/9666)) by [bashonly](https://github.com/bashonly)
+- **jiosaavn**: [Extract via API and fix playlists](https://github.com/yt-dlp/yt-dlp/commit/0c21c53885cf03f4040467ae8c44d7ff51016116) ([#9656](https://github.com/yt-dlp/yt-dlp/issues/9656)) by [bashonly](https://github.com/bashonly)
+- **patreon**: [Fix Vimeo embed extraction](https://github.com/yt-dlp/yt-dlp/commit/c9ce57d9bf51541da2381d99bc096a9d0ddf1f27) ([#9712](https://github.com/yt-dlp/yt-dlp/issues/9712)) by [bashonly](https://github.com/bashonly)
+
+#### Misc. changes
+- **build**: [Normalize `curl_cffi` group to `curl-cffi`](https://github.com/yt-dlp/yt-dlp/commit/02483bea1c4dbe1bace8ca4d19700104fbb8a00f) ([#9698](https://github.com/yt-dlp/yt-dlp/issues/9698)) by [bashonly](https://github.com/bashonly)
+
 ### 2024.04.09
 
 #### Important changes
