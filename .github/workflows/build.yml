@@ -22,7 +22,7 @@ on:
         default: true
         type: boolean
       macos_legacy:
-        default: false
+        default: true
         type: boolean
       windows:
         default: true
@@ -69,7 +69,7 @@ on:
         type: boolean
       macos_legacy:
         description: yt-dlp_macos_legacy
-        default: false
+        default: true
         type: boolean
       windows:
         description: yt-dlp.exe, yt-dlp_min.exe, yt-dlp_win.zip
