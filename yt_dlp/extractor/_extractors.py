@@ -453,6 +453,10 @@ from .damtomo import (
     DamtomoRecordIE,
     DamtomoVideoIE,
 )
+from .dangalplay import (
+    DangalPlayIE,
+    DangalPlaySeasonIE,
+)
 from .daum import (
     DaumIE,
     DaumClipIE,
@@ -872,6 +876,10 @@ from .japandiet import (
     SangiinIE,
 )
 from .jeuxvideo import JeuxVideoIE
+from .jiocinema import (
+    JioCinemaIE,
+    JioCinemaSeriesIE,
+)
 from .jiosaavn import (
     JioSaavnSongIE,
     JioSaavnAlbumIE,
@@ -1387,7 +1395,6 @@ from .openrec import (
 )
 from .ora import OraTVIE
 from .orf import (
-    ORFTVthekIE,
     ORFFM4StoryIE,
     ORFONIE,
     ORFRadioIE,
@@ -1905,6 +1912,12 @@ from .syvdk import SYVDKIE
 from .syfy import SyfyIE
 from .sztvhu import SztvHuIE
 from .tagesschau import TagesschauIE
+from .taptap import (
+    TapTapMomentIE,
+    TapTapAppIE,
+    TapTapAppIntlIE,
+    TapTapPostIntlIE,
+)
 from .tass import TassIE
 from .tbs import TBSIE
 from .tbsjp import (
@@ -2277,10 +2290,6 @@ from .voicy import (
     VoicyChannelIE,
 )
 from .volejtv import VolejTVIE
-from .voot import (
-    VootIE,
-    VootSeriesIE,
-)
 from .voxmedia import (
     VoxMediaVolumeIE,
     VoxMediaIE,
@@ -2377,6 +2386,7 @@ from .xhamster import (
     XHamsterEmbedIE,
     XHamsterUserIE,
 )
+from .xiaohongshu import XiaoHongShuIE
 from .ximalaya import (
     XimalayaIE,
     XimalayaAlbumIE
