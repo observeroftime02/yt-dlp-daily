@@ -93,6 +93,7 @@ updates_key.pem
 *.class
 *.isorted
 *.stackdump
+devscripts/make_chrome_versions.py
 
 # Generated
 AUTHORS
