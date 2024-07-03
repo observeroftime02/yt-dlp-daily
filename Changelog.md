@@ -7,6 +7,11 @@
 ### 2024.07.02
 
 #### Core changes
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/d9213bdd7ea6ca002102e6b38353a7e17c29896a) by [pukkandan](https://github.com/pukkandan)
+
+### 2024.07.02
+
+#### Core changes
 - [Fix `--compat-opt allow-unsafe-ext`](https://github.com/yt-dlp/yt-dlp/commit/773bbb181506856ffda95496ab60c1c9603f1f71) ([#10336](https://github.com/yt-dlp/yt-dlp/issues/10336)) by [bashonly](https://github.com/bashonly), [rdamas](https://github.com/rdamas)
 
 #### Extractor changes
