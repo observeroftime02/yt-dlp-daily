@@ -2,14 +2,14 @@
 
 __version__ = '2024.07.07'
 
-RELEASE_GIT_HEAD = 'b337d2989ce0614651d363383f6f743d977248ef'
+RELEASE_GIT_HEAD = '4c0ce0abb38a262097b8b00dd1945597656fae2a'
 
 VARIANT = None
 
 UPDATE_HINT = None
 
-CHANNEL = 'stable'
+CHANNEL = 'observeroftime02/yt-dlp-daily'
 
-ORIGIN = 'yt-dlp/yt-dlp'
+ORIGIN = 'observeroftime02/yt-dlp-daily'
 
 _pkg_version = '2024.07.07'

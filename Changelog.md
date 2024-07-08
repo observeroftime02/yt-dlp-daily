@@ -6,6 +6,11 @@
 
 ### 2024.07.07
 
+#### Core changes
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/4c0ce0abb38a262097b8b00dd1945597656fae2a) by [pukkandan](https://github.com/pukkandan)
+
+### 2024.07.07
+
 #### Important changes
 - Security: [[ie/douyutv] Do not use dangerous javascript source/URL](https://github.com/yt-dlp/yt-dlp/security/advisories/GHSA-3v33-3wmw-3785)
     - A dependency on potentially malicious third-party JavaScript code has been removed from the Douyu extractors
