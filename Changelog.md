@@ -4,6 +4,32 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2024.07.13.013703
+
+#### Core changes
+- [Merge branch 'yt-dlp-master'](https://github.com/yt-dlp/yt-dlp/commit/578b55c711afb0868fe0af4c0f01b570ffbafc8e) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/3e2bfe50d509db4235db081e8aa079f37418ae47) by [pukkandan](https://github.com/pukkandan)
+- [Resolve conflict in build.yml, switch back to python 3.8 for regular windows builds](https://github.com/yt-dlp/yt-dlp/commit/0305bff082edec2fe20e10059d12b775494b48fe) by [pukkandan](https://github.com/pukkandan)
+- [Update build.yml](https://github.com/yt-dlp/yt-dlp/commit/fe964ac1520e2d4d01678f0eeda2f97a0ecfcf3c) by [pukkandan](https://github.com/pukkandan)
+- [Update build.yml](https://github.com/yt-dlp/yt-dlp/commit/8558621eedc047da3e38ebe41adc610feff8e491) by [pukkandan](https://github.com/pukkandan)
+- [Update build.yml](https://github.com/yt-dlp/yt-dlp/commit/662b5348d751a28228d4564ae84d7d5be1ddbec4) by [pukkandan](https://github.com/pukkandan)
+- [resolve conflicts](https://github.com/yt-dlp/yt-dlp/commit/34e8f7e376078abe1f394fa88deee680d81f3c26) by [pukkandan](https://github.com/pukkandan)
+- [resove conflict in build.yml](https://github.com/yt-dlp/yt-dlp/commit/60d1ee97eed51dae95fe583d30cd66fc534d3427) by [pukkandan](https://github.com/pukkandan)
+
+#### Extractor changes
+- **box**: [Support enterprise URLs](https://github.com/yt-dlp/yt-dlp/commit/705f5b84dec75cc7af97f42fd1530e8062735970) ([#10419](https://github.com/yt-dlp/yt-dlp/issues/10419)) by [seproDev](https://github.com/seproDev)
+- **tiktok**: live: [Fix room ID extraction](https://github.com/yt-dlp/yt-dlp/commit/d2189d3d36987ebeac426fd70a60a5fe86325a2b) ([#10408](https://github.com/yt-dlp/yt-dlp/issues/10408)) by [mokrueger](https://github.com/mokrueger)
+- **tv5monde**: [Support browser impersonation](https://github.com/yt-dlp/yt-dlp/commit/9b95a6765a5f6325af99c4aca961587f0c426e8c) ([#10417](https://github.com/yt-dlp/yt-dlp/issues/10417)) by [bashonly](https://github.com/bashonly) (With fixes in [cc1a309](https://github.com/yt-dlp/yt-dlp/commit/cc1a3098c00995c6aebc2a16bd1050a66bad64db))
+- **youtube**: [Invalidate nsig cache from < 2024.07.09](https://github.com/yt-dlp/yt-dlp/commit/04e17ba20a139f1b3e30ec4bafa3fba26888f0b3) ([#10401](https://github.com/yt-dlp/yt-dlp/issues/10401)) by [bashonly](https://github.com/bashonly)
+
+#### Networking changes
+- **Request Handler**: curl_cffi: [Support `curl_cffi` 0.7.X](https://github.com/yt-dlp/yt-dlp/commit/42bfca00a6b460fc053514cdd7ac6f5b5daddf0c) by [coletdjnz](https://github.com/coletdjnz)
+
+#### Misc. changes
+- **build**
+    - [Include `curl_cffi` in `yt-dlp_linux`](https://github.com/yt-dlp/yt-dlp/commit/4521f30d1479315cd5c3bf4abdad19391952df98) by [bashonly](https://github.com/bashonly)
+    - [Pin `curl-cffi` to 0.5.10 for Windows](https://github.com/yt-dlp/yt-dlp/commit/ac30941ae682f71eab010877c9a977736a61d3cf) by [bashonly](https://github.com/bashonly)
+
 ### 2024.07.09
 
 #### Core changes
