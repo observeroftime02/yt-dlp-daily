@@ -204,7 +204,7 @@ jobs:
           install: | # Installing Python 3.10 from the Deadsnakes repo raises errors
             apt update
             apt -y install zlib1g-dev libffi-dev python3.8 python3.8-dev python3.8-distutils python3-pip
-            python3.8 -m pip install -U pip setuptools==70.3.0 wheel
+            python3.8 -m pip install -U pip setuptools wheel
             # Cannot access any files from the repo directory at this stage
             python3.8 -m pip install -U Pyinstaller mutagen pycryptodomex websockets brotli certifi secretstorage cffi
 
@@ -212,6 +212,7 @@ jobs:
             cd repo
             python3.8 devscripts/install_deps.py -o --include build
             python3.8 devscripts/install_deps.py --include pyinstaller --include secretstorage  # Cached version may be out of date
+            python3.8 -m pip install --force-reinstall -U setuptools==70.3.0
             python3.8 devscripts/update-version.py -c "${{ inputs.channel }}" -r "${{ needs.process.outputs.origin }}" "${{ inputs.version }}"
             python3.8 devscripts/make_lazy_extractors.py
             python3.8 -m bundle.pyinstaller
