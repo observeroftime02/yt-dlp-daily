@@ -9,7 +9,6 @@ from ._utils import remove_start
 def random_user_agent():
     _USER_AGENT_TPL = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/%s Safari/537.36'
     _CHROME_VERSIONS = (
-        '103.0.5060.139',
         '103.0.5060.14',
         '103.0.5060.140',
         '103.0.5060.141',
@@ -47,7 +46,8 @@ def random_user_agent():
         '113.0.5672.127',
         '114.0.5735.110',
         '114.0.5735.134',
-        '114.0.5735.199',  # Current chrome version on Win10x64
+        '114.0.5735.199',
+        '126.0.6478.127',  # Current chrome version on Win10x64
     )
     return _USER_AGENT_TPL % random.choice(_CHROME_VERSIONS)
 
