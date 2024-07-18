@@ -212,7 +212,6 @@ jobs:
             cd repo
             python3.8 devscripts/install_deps.py -o --include build
             python3.8 devscripts/install_deps.py --include pyinstaller --include secretstorage  # Cached version may be out of date
-            python3.8 -m pip install --force-reinstall -U setuptools==70.3.0
             python3.8 devscripts/update-version.py -c "${{ inputs.channel }}" -r "${{ needs.process.outputs.origin }}" "${{ inputs.version }}"
             python3.8 devscripts/make_lazy_extractors.py
             python3.8 -m bundle.pyinstaller
@@ -295,7 +294,6 @@ jobs:
             mv -n -- "${wheel}" "${wheel/x86_64/universal2}"
           done
           python3 -m pip install --force-reinstall -U curl_cffi_universal2/*cffi*.whl
-          python -m pip install --force-reinstall -U setuptools==70.3.0
 
       - name: Prepare
         run: |
@@ -412,7 +410,6 @@ jobs:
           python devscripts/install_deps.py -o --include build
           python devscripts/install_deps.py --include curl-cffi
           python -m pip install -U "https://observeroftime01.github.io/Pyinstaller-Builds/x86_64/pyinstaller-6.7.0-py3-none-any.whl"
-          python -m pip install -U setuptools==70.3.0
 
       - name: Prepare
         run: |
