@@ -294,6 +294,7 @@ jobs:
             mv -n -- "${wheel}" "${wheel/x86_64/universal2}"
           done
           python3 -m pip install --force-reinstall -U curl_cffi_universal2/*cffi*.whl
+          python -m pip install --force-reinstall -U setuptools==70.3.0
 
       - name: Prepare
         run: |
@@ -406,10 +407,11 @@ jobs:
         with: # 3.8 is used for Win7 support
           python-version: "3.8"
       - name: Install Requirements
-        run: | # Custom pyinstaller built with https://github.com/yt-dlp/pyinstaller-builds
+        run: | # Custom pyinstaller built with https://github.com/yt-dlp/pyinstaller-builds, pin setuptools version because the v71 breaks stuff and I don't know why
           python devscripts/install_deps.py -o --include build
           python devscripts/install_deps.py --include curl-cffi
           python -m pip install -U "https://observeroftime01.github.io/Pyinstaller-Builds/x86_64/pyinstaller-6.7.0-py3-none-any.whl"
+          python -m pip install -U setuptools==70.3.0
 
       - name: Prepare
         run: |
