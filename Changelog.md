@@ -4,6 +4,27 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2024.07.23.235824
+
+#### Core changes
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/eca0245010cc6668094967746a55cd860185eaed) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/d14110be1c127bc9f3734e5b9e02e96ae8a6fdf1) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/aa8f227f71f383e0ec5b5f4b2e4ccd48774bf5b2) by [pukkandan](https://github.com/pukkandan)
+- [Update build.yml](https://github.com/yt-dlp/yt-dlp/commit/bb37242fe05acbb2a7a0ada2ecd5540cfb518db3) by [pukkandan](https://github.com/pukkandan)
+- [Update build.yml](https://github.com/yt-dlp/yt-dlp/commit/8ac6ee5e8e2296b9619d054400618e2b06df95fd) by [pukkandan](https://github.com/pukkandan)
+- [Update build.yml](https://github.com/yt-dlp/yt-dlp/commit/785f8ff099d4f47fb25368f457fa086aa97bc908) by [pukkandan](https://github.com/pukkandan)
+- [Update build.yml](https://github.com/yt-dlp/yt-dlp/commit/f25a6442cc105fc2730b9d2913ff5b30288cb6b3) by [pukkandan](https://github.com/pukkandan)
+- [Update networking.py](https://github.com/yt-dlp/yt-dlp/commit/a348d120504885e7681d385f72f9851d7f8ef7b3) by [pukkandan](https://github.com/pukkandan)
+
+#### Extractor changes
+- **abematv**: [Adapt key retrieval to request handler framework](https://github.com/yt-dlp/yt-dlp/commit/a3bab4752a2b3d56e5a59b4e0411bb8f695c010b) ([#10491](https://github.com/yt-dlp/yt-dlp/issues/10491)) by [bashonly](https://github.com/bashonly)
+- **tiktok**: [Fix and deprioritize JSON subtitles](https://github.com/yt-dlp/yt-dlp/commit/2f97779f335ac069ecccd9c7bf81abf4a83cfe7a) ([#10516](https://github.com/yt-dlp/yt-dlp/issues/10516)) by [bashonly](https://github.com/bashonly)
+- **vimeo**: [Fix chapters extraction](https://github.com/yt-dlp/yt-dlp/commit/a0a1bc3d8d8e3bb9a48a06e835815a0460e90e77) ([#10544](https://github.com/yt-dlp/yt-dlp/issues/10544)) by [bashonly](https://github.com/bashonly)
+- **youtube**: [Fix `n` function name extraction for player `3400486c`](https://github.com/yt-dlp/yt-dlp/commit/713b4cd18f00556771af8cfdd9cea6cc1a09e948) ([#10542](https://github.com/yt-dlp/yt-dlp/issues/10542)) by [bashonly](https://github.com/bashonly)
+
+#### Misc. changes
+- **build**: [Pin `setuptools` version](https://github.com/yt-dlp/yt-dlp/commit/e046db8a116b1c320d4785daadd48ea0b22a3987) ([#10493](https://github.com/yt-dlp/yt-dlp/issues/10493)) by [bashonly](https://github.com/bashonly)
+
 ### 2024.07.16
 
 #### Core changes
