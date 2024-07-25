@@ -6,6 +6,11 @@
 
 ### 2024.07.25
 
+#### Core changes
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/8cbf3fbae88ba18d047df514c209303ca921d595) by [pukkandan](https://github.com/pukkandan)
+
+### 2024.07.25
+
 #### Extractor changes
 - **abematv**: [Adapt key retrieval to request handler framework](https://github.com/yt-dlp/yt-dlp/commit/a3bab4752a2b3d56e5a59b4e0411bb8f695c010b) ([#10491](https://github.com/yt-dlp/yt-dlp/issues/10491)) by [bashonly](https://github.com/bashonly)
 - **facebook**: [Fix extraction](https://github.com/yt-dlp/yt-dlp/commit/1a34a802f44a1dab8f642c79c3cc810e21541d3b) ([#10531](https://github.com/yt-dlp/yt-dlp/issues/10531)) by [bashonly](https://github.com/bashonly)
