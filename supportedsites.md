@@ -1608,6 +1608,7 @@
  - **videomore:season**
  - **videomore:video**
  - **VideoPress**
+ - **Vidflex**
  - **Vidio**: [*vidio*](## "netrc machine")
  - **VidioLive**: [*vidio*](## "netrc machine")
  - **VidioPremier**: [*vidio*](## "netrc machine")
