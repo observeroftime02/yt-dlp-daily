@@ -15,7 +15,20 @@
 
 ## Archived daily builds can be found [here](https://github.com/observeroftime02/yt-dlp-daily-archives)
 
- ### This is a fork of [yt-dlp](https://github.com/yt-dlp/yt-dlp) which provides daily builds for testing purposes, that are experimental in nature. Please DO NOT ask for support from the official repository. Report the issue here please. 
+### This is a fork of [yt-dlp](https://github.com/yt-dlp/yt-dlp) which provides daily builds for testing purposes, that are experimental in nature. Please **DO NOT** ask for support from the official repository. Report the issue here please. Things might break unexpectedly, no functionality is guaranteed.
+
+No, I will not remove the warning statements from the verbose output. They make it crystal clear that an unoffical version is being run either intentionally or unintentionally. If you are experiencing trouble, please download an official release from the parent repository instead. The contents are 99.9% identical anyways.
+##
+
+**What's different**: Changed the self-update feature to point at my repository instead, changed some build-related metadata (e-mail address, owner, contact, etc.), and I try to maintain an up-to-date list of Chrome versions in utils/networking.py. It is functionally identical in every other aspect, and you may confirm as much by comparing the contents of both repositories against each other. Sometimes windows executables are built with github actions using different versions of python than used by the parent repository, with varying degrees of success
+
+**Why bother maintaining it:** Because of incredibly restrictive policies that dictate that any code I run across my machines and servers must be "my own" and that I must "have full controll over the source code of any non-approved thrid-party executable that is to be ran". Call it a form of malicious compliance, if you want to. At least I don't have to pay for my own valid code signing certificate (yet).
+
+##
+
+All github action builds are hashed, and the SHA*SUM files containing the hashes signed wtih my private key to ensure integrity. This is done to establish a level of trust that the source code in the [release branch](https://github.com/observeroftime02/yt-dlp-daily/tree/release) matches that of the source code used by github actions. You can download the checksums and signatures on the release page. My public key for verification is available [here](https://github.com/observeroftime02/yt-dlp-daily/blob/master/observeroftime02_0x519EA8F3_public.asc). **If for _any_ reason the signature fails to validate, please do contact me at once, and _do not_ use the executables.**
+
+##
 
 yt-dlp is a [youtube-dl](https://github.com/ytdl-org/youtube-dl) fork based on the now inactive [youtube-dlc](https://github.com/blackjack4494/yt-dlc). The main focus of this project is adding new features and patches while also keeping up to date with the original project
 
