@@ -4,6 +4,17 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2024.10.12.071141
+
+#### Core changes
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/6c2c5627fc622616dc7f18cf915858dfc5e88f2c) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/b7b973e1fbdc043c220d3ab5c42d183d03ad7e1b) by [pukkandan](https://github.com/pukkandan)
+
+#### Extractor changes
+- **drtv**: [Fix extractor](https://github.com/yt-dlp/yt-dlp/commit/f4338714241b11d9d43768ae71a25f5e952f677d) ([#11141](https://github.com/yt-dlp/yt-dlp/issues/11141)) by [444995](https://github.com/444995)
+- **tver**: [Support series URLs](https://github.com/yt-dlp/yt-dlp/commit/ceaea731b6e314dbbdfb2e358d7677785ed0b4fc) ([#9507](https://github.com/yt-dlp/yt-dlp/issues/9507)) by [pzhlkj6612](https://github.com/pzhlkj6612), [vvto33](https://github.com/vvto33)
+- **weverse**: [Fix extractor](https://github.com/yt-dlp/yt-dlp/commit/5310fa87f6cb7f66bf42e2520878952fbf6b1652) ([#11215](https://github.com/yt-dlp/yt-dlp/issues/11215)) by [bashonly](https://github.com/bashonly)
+
 ### 2024.10.07
 
 #### Core changes
