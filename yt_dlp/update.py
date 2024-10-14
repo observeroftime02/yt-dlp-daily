@@ -37,7 +37,7 @@ from .version import (
 
 UPDATE_SOURCES = {
     'stable': 'observeroftime02/yt-dlp-daily',
-    'nightly': 'observeroftime02/yt-dlp-daily-archives',
+    'nightly': 'observeroftime02/yt-dlp-daily',
     'master': 'observeroftime02/yt-dlp-daily',
 }
 REPOSITORY = UPDATE_SOURCES['stable']
