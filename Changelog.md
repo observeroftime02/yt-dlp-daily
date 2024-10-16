@@ -4,6 +4,37 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2024.10.16.060432
+
+#### Core changes
+- [Add extractor helpers](https://github.com/yt-dlp/yt-dlp/commit/d710a6ca7c622705c0c8c8a3615916f531137d5d) ([#10653](https://github.com/yt-dlp/yt-dlp/issues/10653)) by [Grub4K](https://github.com/Grub4K)
+- [Merge branch 'yt-dlp-master' resolved merge conflicts in devscripts/make_lazy_extractors.py](https://github.com/yt-dlp/yt-dlp/commit/af78b373402d92f71ed065902612d7b7ebd744fe) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/6c2c5627fc622616dc7f18cf915858dfc5e88f2c) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/b7b973e1fbdc043c220d3ab5c42d183d03ad7e1b) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/46616e89b6f836fefd2a0d6ba228d29ecbaede3f) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/684a682237f176fa291f214e8c7d6dfab5399925) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/ad7681a9d52ad90d1cd73d01d524b93e10585c57) by [pukkandan](https://github.com/pukkandan)
+- [resolve conflict](https://github.com/yt-dlp/yt-dlp/commit/7b12280e12e3d970559ece66550955dc43e04869) by [pukkandan](https://github.com/pukkandan)
+- **cookies**: [Fix compatibility for Python <=3.9 in traceback](https://github.com/yt-dlp/yt-dlp/commit/c5f0f58efd8c3930de8202c15a5c53b1b635bd51) by [Grub4K](https://github.com/Grub4K)
+- **update**: [Removed stale nightly build repo](https://github.com/yt-dlp/yt-dlp/commit/0d1cbaaf0dc4f42c9e524e5089d754da67b6f039) by [pukkandan](https://github.com/pukkandan)
+- **utils**: `sanitize_path`: [Reimplement function](https://github.com/yt-dlp/yt-dlp/commit/85b87c991af25dcb35630fa94580fd418e78ee33) ([#11198](https://github.com/yt-dlp/yt-dlp/issues/11198)) by [Grub4K](https://github.com/Grub4K)
+
+#### Extractor changes
+- **adobepass**: [Use newer user-agent for provider redirect request](https://github.com/yt-dlp/yt-dlp/commit/dcfeea4dd5e5686821350baa6c7767a011944867) ([#11250](https://github.com/yt-dlp/yt-dlp/issues/11250)) by [bashonly](https://github.com/bashonly)
+- **cwtv**: [Fix extraction](https://github.com/yt-dlp/yt-dlp/commit/9d43dcb2c5c38f443f84dfc126cd32720e1a1ad6) ([#11230](https://github.com/yt-dlp/yt-dlp/issues/11230)) by [bashonly](https://github.com/bashonly)
+- **drtv**: [Fix extractor](https://github.com/yt-dlp/yt-dlp/commit/f4338714241b11d9d43768ae71a25f5e952f677d) ([#11141](https://github.com/yt-dlp/yt-dlp/issues/11141)) by [444995](https://github.com/444995)
+- **generic**: [Impersonate browser by default](https://github.com/yt-dlp/yt-dlp/commit/edfd095b1917701c5046bd51f9542897c17d41a7) ([#11206](https://github.com/yt-dlp/yt-dlp/issues/11206)) by [Grub4K](https://github.com/Grub4K)
+- **patreon**: campaign: [Stricter URL matching](https://github.com/yt-dlp/yt-dlp/commit/babb70960595e2146f06f81affc29c7e713e34e2) ([#11235](https://github.com/yt-dlp/yt-dlp/issues/11235)) by [bashonly](https://github.com/bashonly)
+- **reddit**: [Detect and raise when login is required](https://github.com/yt-dlp/yt-dlp/commit/cba7868502f04175fecf9ab3e363296aee7ebec2) ([#11202](https://github.com/yt-dlp/yt-dlp/issues/11202)) by [pzhlkj6612](https://github.com/pzhlkj6612)
+- **tver**: [Support series URLs](https://github.com/yt-dlp/yt-dlp/commit/ceaea731b6e314dbbdfb2e358d7677785ed0b4fc) ([#9507](https://github.com/yt-dlp/yt-dlp/issues/9507)) by [pzhlkj6612](https://github.com/pzhlkj6612), [vvto33](https://github.com/vvto33)
+- **weverse**: [Fix extractor](https://github.com/yt-dlp/yt-dlp/commit/5310fa87f6cb7f66bf42e2520878952fbf6b1652) ([#11215](https://github.com/yt-dlp/yt-dlp/issues/11215)) by [bashonly](https://github.com/bashonly)
+
+#### Misc. changes
+- **build**
+    - [Use `macos-13` image for macOS builds](https://github.com/yt-dlp/yt-dlp/commit/64d84d75ca8c19ec06558cc7c511f5f4f7a822bc) ([#11236](https://github.com/yt-dlp/yt-dlp/issues/11236)) by [bashonly](https://github.com/bashonly)
+    - `make_lazy_extractors`: [Force running without plugins](https://github.com/yt-dlp/yt-dlp/commit/1a830394a21a81a3e9918f9e175abc9fbb21f089) ([#11205](https://github.com/yt-dlp/yt-dlp/issues/11205)) by [Grub4K](https://github.com/Grub4K)
+- **test**: [Allow running tests explicitly](https://github.com/yt-dlp/yt-dlp/commit/16eb28026a2ddf5608d0a628ef15949b8d3805a9) ([#11203](https://github.com/yt-dlp/yt-dlp/issues/11203)) by [Grub4K](https://github.com/Grub4K)
+
 ### 2024.10.07
 
 #### Core changes
