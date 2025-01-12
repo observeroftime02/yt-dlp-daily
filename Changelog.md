@@ -4,6 +4,23 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2025.01.12.075435
+
+#### Core changes
+- [Fix filename sanitization with `--no-windows-filenames`](https://github.com/yt-dlp/yt-dlp/commit/8346b549150003df988538e54c9d8bc4de568979) ([#11988](https://github.com/yt-dlp/yt-dlp/issues/11988)) by [bashonly](https://github.com/bashonly)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/ea01c9cc2f38a3166bdfee26c635a7440ad7e299) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/1eab78e3e13b43123a07f517d92c59001dff3c37) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/8bd3c9877b46ce8fd7a7a35fdb8aae414e879cf5) by [pukkandan](https://github.com/pukkandan)
+- [Validate retries values are non-negative](https://github.com/yt-dlp/yt-dlp/commit/1f4e1e85a27c5b43e34d7706cfd88ffce1b56a4a) ([#11927](https://github.com/yt-dlp/yt-dlp/issues/11927)) by [Strkmn](https://github.com/Strkmn)
+
+#### Extractor changes
+- **plvideo**: [Add extractor](https://github.com/yt-dlp/yt-dlp/commit/3c14e9191f3035b9a729d1d87bc0381f42de57cf) ([#10657](https://github.com/yt-dlp/yt-dlp/issues/10657)) by [Sanceilaks](https://github.com/Sanceilaks), [seproDev](https://github.com/seproDev)
+- **xiaohongshu**: [Extend `_VALID_URL`](https://github.com/yt-dlp/yt-dlp/commit/763ed06ee69f13949397897bd42ff2ec3dc3d384) ([#11806](https://github.com/yt-dlp/yt-dlp/issues/11806)) by [HobbyistDev](https://github.com/HobbyistDev)
+- **youtube**
+    - [Fix DASH formats incorrectly skipped in some situations](https://github.com/yt-dlp/yt-dlp/commit/0b6b7742c2e7f2a1fcb0b54ef3dd484bab404b3f) ([#11910](https://github.com/yt-dlp/yt-dlp/issues/11910)) by [coletdjnz](https://github.com/coletdjnz)
+    - [Refactor cookie auth](https://github.com/yt-dlp/yt-dlp/commit/75079f4e3f7dce49b61ef01da7adcd9876a0ca3b) ([#11989](https://github.com/yt-dlp/yt-dlp/issues/11989)) by [coletdjnz](https://github.com/coletdjnz)
+    - [Use `tv` instead of `mweb` client by default](https://github.com/yt-dlp/yt-dlp/commit/712d2abb32f59b2d246be2901255f84f1a4c30b3) ([#12059](https://github.com/yt-dlp/yt-dlp/issues/12059)) by [coletdjnz](https://github.com/coletdjnz)
+
 ### 2024.12.23
 
 #### Core changes
