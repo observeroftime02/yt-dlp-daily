@@ -4,6 +4,20 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2025.03.31.152528
+
+#### Core changes
+- [Add `--compat-options 2024`](https://github.com/yt-dlp/yt-dlp/commit/22e34adbd741e1c7072015debd615dc3fb71c401) ([#12789](https://github.com/yt-dlp/yt-dlp/issues/12789)) by [seproDev](https://github.com/seproDev)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/33514e9352dd80edb46c7f475e8cd3160b46e5d2) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/2f6ca8715897cce18b17202476ea4a5df61cb2d8) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/ad0ab1865334c590f45a64f3772ddf0456d65ce5) by [pukkandan](https://github.com/pukkandan)
+
+#### Extractor changes
+- **generic**: [Validate response before checking m3u8 live status](https://github.com/yt-dlp/yt-dlp/commit/9a1ec1d36e172d252714cef712a6d091e0a0c4f2) ([#12784](https://github.com/yt-dlp/yt-dlp/issues/12784)) by [bashonly](https://github.com/bashonly)
+- **mlbtv**: [Fix radio-only extraction](https://github.com/yt-dlp/yt-dlp/commit/f033d86b96b36f8c5289dd7c3304f42d4d9f6ff4) ([#12792](https://github.com/yt-dlp/yt-dlp/issues/12792)) by [bashonly](https://github.com/bashonly)
+- **sbs**: [Fix subtitles extraction](https://github.com/yt-dlp/yt-dlp/commit/29560359120f28adaaac67c86fa8442eb72daa0d) ([#12785](https://github.com/yt-dlp/yt-dlp/issues/12785)) by [bashonly](https://github.com/bashonly)
+- **youtube**: tab: [Fix playlist continuation extraction](https://github.com/yt-dlp/yt-dlp/commit/6a6d97b2cbc78f818de05cc96edcdcfd52caa259) ([#12777](https://github.com/yt-dlp/yt-dlp/issues/12777)) by [coletdjnz](https://github.com/coletdjnz)
+
 ### 2025.03.27
 
 #### Core changes
