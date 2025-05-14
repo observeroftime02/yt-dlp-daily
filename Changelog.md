@@ -4,6 +4,42 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2025.05.14.012952
+
+#### Core changes
+- [Merge branch 'yt-dlp-master'](https://github.com/yt-dlp/yt-dlp/commit/d0f945ebf9b8c8c0ff9b721c217ee65db34f09f0) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp-master'](https://github.com/yt-dlp/yt-dlp/commit/461c10e63e70c5d1d609123a37493ab3e44f34c5) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/14a305aceeb18e1f7f95704b0afb2a1785a699c9) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/bd3550b8df252852b936945f9cc3cd7cd7df373c) by [pukkandan](https://github.com/pukkandan)
+- [resolve conflict](https://github.com/yt-dlp/yt-dlp/commit/c3d34c72317e1ee124f9facfcc8265be2742744a) by [pukkandan](https://github.com/pukkandan)
+- [resolve conflict](https://github.com/yt-dlp/yt-dlp/commit/3624523a084d7db3c0c69644c2dc99dadd8abd08) by [pukkandan](https://github.com/pukkandan)
+
+#### Extractor changes
+- **amcnetworks**: [Fix extractor](https://github.com/yt-dlp/yt-dlp/commit/464c84fedf78eef822a431361155f108b5df96d7) ([#13147](https://github.com/yt-dlp/yt-dlp/issues/13147)) by [bashonly](https://github.com/bashonly)
+- **bitchute**: [Fix extractor](https://github.com/yt-dlp/yt-dlp/commit/1d0f6539c47e5d5c68c3c47cdb7075339e2885ac) ([#13081](https://github.com/yt-dlp/yt-dlp/issues/13081)) by [bashonly](https://github.com/bashonly)
+- **cartoonnetwork**: [Remove extractor](https://github.com/yt-dlp/yt-dlp/commit/7dbb47f84f0ee1266a3a01f58c9bc4c76d76794a) ([#13148](https://github.com/yt-dlp/yt-dlp/issues/13148)) by [bashonly](https://github.com/bashonly)
+- **jiosaavn**
+    - artist: [Add extractor](https://github.com/yt-dlp/yt-dlp/commit/586b557b124f954d3f625360ebe970989022ad97) ([#12803](https://github.com/yt-dlp/yt-dlp/issues/12803)) by [subrat-lima](https://github.com/subrat-lima)
+    - playlist, show: [Add extractor](https://github.com/yt-dlp/yt-dlp/commit/317f4b8006c2c0f0f64f095b1485163ad97c9053) ([#12803](https://github.com/yt-dlp/yt-dlp/issues/12803)) by [subrat-lima](https://github.com/subrat-lima)
+    - show: [Add extractor](https://github.com/yt-dlp/yt-dlp/commit/6839276496d8814cf16f58b637e45663467928e6) ([#12803](https://github.com/yt-dlp/yt-dlp/issues/12803)) by [subrat-lima](https://github.com/subrat-lima)
+- **niconico**: live: [Fix extractor](https://github.com/yt-dlp/yt-dlp/commit/7a7b85c9014d96421e18aa7ea5f4c1bee5ceece0) ([#13045](https://github.com/yt-dlp/yt-dlp/issues/13045)) by [doe1080](https://github.com/doe1080)
+- **nytimesarticle**: [Fix extraction](https://github.com/yt-dlp/yt-dlp/commit/b26bc32579c00ef579d75a835807ccc87d20ee0a) ([#13104](https://github.com/yt-dlp/yt-dlp/issues/13104)) by [bashonly](https://github.com/bashonly)
+- **playsuisse**: [Improve metadata extraction](https://github.com/yt-dlp/yt-dlp/commit/d880e060803ae8ed5a047e578cca01e1f0e630ce) ([#12466](https://github.com/yt-dlp/yt-dlp/issues/12466)) by [v3DJG6GL](https://github.com/v3DJG6GL)
+- **sprout**: [Remove extractor](https://github.com/yt-dlp/yt-dlp/commit/cbcfe6378dde33a650e3852ab17ad4503b8e008d) ([#13149](https://github.com/yt-dlp/yt-dlp/issues/13149)) by [bashonly](https://github.com/bashonly)
+- **svtpage**: [Fix extractor](https://github.com/yt-dlp/yt-dlp/commit/ea8498ed534642dd7e925961b97b934987142fd3) ([#12957](https://github.com/yt-dlp/yt-dlp/issues/12957)) by [diman8](https://github.com/diman8)
+- **wat.tv**: [Improve error handling](https://github.com/yt-dlp/yt-dlp/commit/f123cc83b3aea45053f5fa1d9141048b01fc2774) ([#13111](https://github.com/yt-dlp/yt-dlp/issues/13111)) by [bashonly](https://github.com/bashonly)
+- **weverse**: [Fix live extraction](https://github.com/yt-dlp/yt-dlp/commit/5328eda8820cc5f21dcf917684d23fbdca41831d) ([#13084](https://github.com/yt-dlp/yt-dlp/issues/13084)) by [bashonly](https://github.com/bashonly)
+- **youtube**
+    - [Add `web_embedded` client for age-restricted videos](https://github.com/yt-dlp/yt-dlp/commit/0feec6dc131f488428bf881519e7c69766fbb9ae) ([#13089](https://github.com/yt-dlp/yt-dlp/issues/13089)) by [bashonly](https://github.com/bashonly)
+    - [Extract `media_type` for all videos](https://github.com/yt-dlp/yt-dlp/commit/ded11ebc9afba6ba33923375103e9be2d7c804e7) ([#13136](https://github.com/yt-dlp/yt-dlp/issues/13136)) by [bashonly](https://github.com/bashonly)
+    - [Fix `--live-from-start` support for premieres](https://github.com/yt-dlp/yt-dlp/commit/8f303afb43395be360cafd7ad4ce2b6e2eedfb8a) ([#13079](https://github.com/yt-dlp/yt-dlp/issues/13079)) by [arabcoders](https://github.com/arabcoders)
+
+#### Misc. changes
+- **build**
+    - [Bump PyInstaller to v6.13.0](https://github.com/yt-dlp/yt-dlp/commit/17cf9088d0d535e4a7feffbf02bd49cd9dae5ab9) ([#13082](https://github.com/yt-dlp/yt-dlp/issues/13082)) by [bashonly](https://github.com/bashonly)
+    - [Bump run-on-arch-action to v3](https://github.com/yt-dlp/yt-dlp/commit/9064d2482d1fe722bbb4a49731fe0711c410d1c8) ([#13088](https://github.com/yt-dlp/yt-dlp/issues/13088)) by [bashonly](https://github.com/bashonly)
+    - [update pyinstaller](https://github.com/yt-dlp/yt-dlp/commit/3c359a4be4eafee144f4b2f24db1f45907d5735a) by [pukkandan](https://github.com/pukkandan)
+
 ### 2025.04.30
 
 #### Important changes
