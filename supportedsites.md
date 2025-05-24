@@ -1511,6 +1511,7 @@ The only reliable way to check if a site is supported is to try it.
  - **tokfm:podcast**
  - **ToonGoggles**
  - **tou.tv**: [*toutv*](## "netrc machine")
+ - **toutiao**: 今日头条
  - **Toypics**: Toypics video (**Currently broken**)
  - **ToypicsUser**: Toypics user profile (**Currently broken**)
  - **TrailerAddict**: (**Currently broken**)
