@@ -256,7 +256,7 @@ jobs:
         with:
           path: |
             ~/yt-dlp-build-venv
-          key: cache-reqs-${{ github.job }}
+          key: cache-reqs-${{ github.job }}-${{ github.ref }}
 
       - name: Install Requirements
         run: |
@@ -331,19 +331,16 @@ jobs:
         if: steps.restore-cache.outputs.cache-hit == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          cache_key: cache-reqs-${{ github.job }}
-          repository: ${{ github.repository }}
-          branch: ${{ github.ref }}
+          cache_key: cache-reqs-${{ github.job }}-${{ github.ref }}
         run: |
-          gh extension install actions/gh-actions-cache
-          gh actions-cache delete "${cache_key}" -R "${repository}" -B "${branch}" --confirm
+          gh cache delete "${cache_key}"
 
       - name: Cache requirements
         uses: actions/cache/save@v4
         with:
           path: |
             ~/yt-dlp-build-venv
-          key: cache-reqs-${{ github.job }}
+          key: cache-reqs-${{ github.job }}-${{ github.ref }}
 
   macos_legacy:
     needs: process
@@ -460,7 +457,11 @@ jobs:
         run: |
           python devscripts/install_deps.py -o --include build
           python devscripts/install_deps.py
+<<<<<<< HEAD
           python -m pip install -U "https://observeroftime01.github.io/Pyinstaller-Builds/i686/pyinstaller-6.12.0-py3-none-any.whl"
+=======
+          python -m pip install -U "https://observeroftime01.github.io/Pyinstaller-Builds/i686/pyinstaller-6.13.0-py3-none-any.whl"
+>>>>>>> 6036fafbb76783208c07f271cd4bc11a28b4f922
 
       - name: Prepare
         run: |
