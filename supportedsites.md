@@ -44,11 +44,7 @@ The only reliable way to check if a site is supported is to try it.
  - **ADN**: [*animationdigitalnetwork*](## "netrc machine") Animation Digital Network
  - **ADNSeason**: [*animationdigitalnetwork*](## "netrc machine") Animation Digital Network
  - **AdobeConnect**
- - **adobetv**: (**Currently broken**)
- - **adobetv:channel**: (**Currently broken**)
- - **adobetv:embed**: (**Currently broken**)
- - **adobetv:show**: (**Currently broken**)
- - **adobetv:video**
+ - **adobetv**
  - **AdultSwim**
  - **aenetworks**: A+E Networks: A&E, Lifetime, History.com, FYI Network and History Vault
  - **aenetworks:collection**
@@ -100,7 +96,6 @@ The only reliable way to check if a site is supported is to try it.
  - **ARD**
  - **ARDMediathek**
  - **ARDMediathekCollection**
- - **Arkena**
  - **Art19**
  - **Art19Show**
  - **arte.sky.it**
@@ -700,8 +695,8 @@ The only reliable way to check if a site is supported is to try it.
  - **lbry:channel**: odysee.com channels
  - **lbry:playlist**: odysee.com playlists
  - **LCI**
- - **Lcp**
- - **LcpPlay**
+ - **Lcp**: (**Currently broken**)
+ - **LcpPlay**: (**Currently broken**)
  - **Le**: 乐视网
  - **LearningOnScreen**
  - **Lecture2Go**: (**Currently broken**)
@@ -1088,7 +1083,6 @@ The only reliable way to check if a site is supported is to try it.
  - **PiramideTVChannel**
  - **pixiv:sketch**
  - **pixiv:​sketch:user**
- - **Pladform**
  - **PlanetMarathi**
  - **Platzi**: [*platzi*](## "netrc machine")
  - **PlatziCourse**: [*platzi*](## "netrc machine")
@@ -1618,8 +1612,6 @@ The only reliable way to check if a site is supported is to try it.
  - **Vbox7**
  - **Veo**
  - **Vesti**: Вести.Ru (**Currently broken**)
- - **Vevo**
- - **VevoPlaylist**
  - **VGTV**: VGTV, BTTV, FTV, Aftenposten and Aftonbladet
  - **vh1.com**
  - **vhx:embed**: [*vimeo*](## "netrc machine")
