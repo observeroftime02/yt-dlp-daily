@@ -4,6 +4,19 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2025.08.21.055532
+
+#### Core changes
+- [Merge branch 'yt-dlp-master'](https://github.com/yt-dlp/yt-dlp/commit/dbd837664763ecd4202e5315923387513ba52a47) by [pukkandan](https://github.com/pukkandan)
+- [resolve conflict](https://github.com/yt-dlp/yt-dlp/commit/e104ebc9a63b6c7809cea40b074a932bf15115e5) by [pukkandan](https://github.com/pukkandan)
+
+#### Extractor changes
+- **steam**: [Fix extractors](https://github.com/yt-dlp/yt-dlp/commit/fcea3edb5c5648638357f27431500c0aaf08b147) ([#14093](https://github.com/yt-dlp/yt-dlp/issues/14093)) by [doe1080](https://github.com/doe1080)
+- **youtube**: [Update `tv` client config](https://github.com/yt-dlp/yt-dlp/commit/a03c37b44ec8f50fd472c409115096f92410346d) ([#14101](https://github.com/yt-dlp/yt-dlp/issues/14101)) by [seproDev](https://github.com/seproDev)
+
+#### Misc. changes
+- **build**: [Post-release workflow cleanup](https://github.com/yt-dlp/yt-dlp/commit/415b6d9ca868032a45b30b9139a50c5c06be2feb) ([#14090](https://github.com/yt-dlp/yt-dlp/issues/14090)) by [bashonly](https://github.com/bashonly)
+
 ### 2025.08.20
 
 #### Core changes
