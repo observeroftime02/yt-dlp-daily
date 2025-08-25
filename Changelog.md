@@ -4,6 +4,17 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2025.08.25.055439
+
+#### Core changes
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/0049a688c1920b8ed73f0eda87ac87edae513dae) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/a795c989eeb57ffafdd9e4626d556aa220ccdf5f) by [pukkandan](https://github.com/pukkandan)
+
+#### Extractor changes
+- **youtube**
+    - [Add `tcc` player JS variant](https://github.com/yt-dlp/yt-dlp/commit/8f4a908300f55054bc96814bceeaa1034fdf4110) ([#14134](https://github.com/yt-dlp/yt-dlp/issues/14134)) by [bashonly](https://github.com/bashonly)
+    - [Player client maintenance](https://github.com/yt-dlp/yt-dlp/commit/3bd91544122142a87863d79e54e995c26cfd7f92) ([#14135](https://github.com/yt-dlp/yt-dlp/issues/14135)) by [bashonly](https://github.com/bashonly)
+
 ### 2025.08.22
 
 #### Core changes
