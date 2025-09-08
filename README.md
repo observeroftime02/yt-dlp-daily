@@ -119,21 +119,21 @@ File|Description
 
 File|Description
 :---|:---
-[yt-dlp_linux](https://github.com/observeroftime02/yt-dlp/releases/latest/download/yt-dlp_linux)|Linux (glibc 2.17+) standalone x86_64 binary
-[yt-dlp_linux.zip](https://github.com/observeroftime02/yt-dlp/releases/latest/download/yt-dlp_linux.zip)|Unpackaged Linux (glibc 2.17+) x86_64 executable (no auto-update)
-[yt-dlp_linux_aarch64](https://github.com/observeroftime02/yt-dlp/releases/latest/download/yt-dlp_linux_aarch64)|Linux (glibc 2.17+) standalone aarch64 binary
-[yt-dlp_linux_aarch64.zip](https://github.com/observeroftime02/yt-dlp/releases/latest/download/yt-dlp_linux_aarch64.zip)|Unpackaged Linux (glibc 2.17+) aarch64 executable (no auto-update)
-[yt-dlp_linux_armv7l.zip](https://github.com/observeroftime02/yt-dlp/releases/latest/download/yt-dlp_linux_armv7l.zip)|Unpackaged Linux (glibc 2.31+) armv7l executable (no auto-update)
-[yt-dlp_musllinux](https://github.com/observeroftime02/yt-dlp/releases/latest/download/yt-dlp_musllinux)|Linux (musl 1.2+) standalone x86_64 binary
-[yt-dlp_musllinux.zip](https://github.com/observeroftime02/yt-dlp/releases/latest/download/yt-dlp_musllinux.zip)|Unpackaged Linux (musl 1.2+) x86_64 executable (no auto-update)
-[yt-dlp_musllinux_aarch64](https://github.com/observeroftime02/yt-dlp/releases/latest/download/yt-dlp_musllinux_aarch64)|Linux (musl 1.2+) standalone aarch64 binary
-[yt-dlp_musllinux_aarch64.zip](https://github.com/observeroftime02/yt-dlp/releases/latest/download/yt-dlp_musllinux_aarch64.zip)|Unpackaged Linux (musl 1.2+) aarch64 executable (no auto-update)
-[yt-dlp_x86.exe](https://github.com/observeroftime02/yt-dlp/releases/latest/download/yt-dlp_x86.exe)|Windows (Win8+) standalone x86 (32-bit) binary
-[yt-dlp_win_x86.zip](https://github.com/observeroftime02/yt-dlp/releases/latest/download/yt-dlp_win_x86.zip)|Unpackaged Windows (Win8+) x86 (32-bit) executable (no auto-update)
-[yt-dlp_arm64.exe](https://github.com/observeroftime02/yt-dlp/releases/latest/download/yt-dlp_arm64.exe)|Windows (Win10+) standalone ARM64 binary
-[yt-dlp_win_arm64.zip](https://github.com/observeroftime02/yt-dlp/releases/latest/download/yt-dlp_win_arm64.zip)|Unpackaged Windows (Win10+) ARM64 executable (no auto-update)
-[yt-dlp_win.zip](https://github.com/observeroftime02/yt-dlp/releases/latest/download/yt-dlp_win.zip)|Unpackaged Windows (Win8+) x64 executable (no auto-update)
-[yt-dlp_macos.zip](https://github.com/observeroftime02/yt-dlp/releases/latest/download/yt-dlp_macos.zip)|Unpackaged MacOS (10.15+) executable (no auto-update)
+[yt-dlp_linux](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/yt-dlp_linux)|Linux (glibc 2.17+) standalone x86_64 binary
+[yt-dlp_linux.zip](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/yt-dlp_linux.zip)|Unpackaged Linux (glibc 2.17+) x86_64 executable (no auto-update)
+[yt-dlp_linux_aarch64](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/yt-dlp_linux_aarch64)|Linux (glibc 2.17+) standalone aarch64 binary
+[yt-dlp_linux_aarch64.zip](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/yt-dlp_linux_aarch64.zip)|Unpackaged Linux (glibc 2.17+) aarch64 executable (no auto-update)
+[yt-dlp_linux_armv7l.zip](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/yt-dlp_linux_armv7l.zip)|Unpackaged Linux (glibc 2.31+) armv7l executable (no auto-update)
+[yt-dlp_musllinux](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/yt-dlp_musllinux)|Linux (musl 1.2+) standalone x86_64 binary
+[yt-dlp_musllinux.zip](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/yt-dlp_musllinux.zip)|Unpackaged Linux (musl 1.2+) x86_64 executable (no auto-update)
+[yt-dlp_musllinux_aarch64](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/yt-dlp_musllinux_aarch64)|Linux (musl 1.2+) standalone aarch64 binary
+[yt-dlp_musllinux_aarch64.zip](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/yt-dlp_musllinux_aarch64.zip)|Unpackaged Linux (musl 1.2+) aarch64 executable (no auto-update)
+[yt-dlp_x86.exe](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/yt-dlp_x86.exe)|Windows (Win8+) standalone x86 (32-bit) binary
+[yt-dlp_win_x86.zip](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/yt-dlp_win_x86.zip)|Unpackaged Windows (Win8+) x86 (32-bit) executable (no auto-update)
+[yt-dlp_arm64.exe](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/yt-dlp_arm64.exe)|Windows (Win10+) standalone ARM64 binary
+[yt-dlp_win_arm64.zip](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/yt-dlp_win_arm64.zip)|Unpackaged Windows (Win10+) ARM64 executable (no auto-update)
+[yt-dlp_win.zip](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/yt-dlp_win.zip)|Unpackaged Windows (Win8+) x64 executable (no auto-update)
+[yt-dlp_macos.zip](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/yt-dlp_macos.zip)|Unpackaged MacOS (10.15+) executable (no auto-update)
 
 #### Misc
 
@@ -141,7 +141,28 @@ File|Description
 :---|:---
 [yt-dlp.tar.gz](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/yt-dlp.tar.gz)|Source tarball
 [SHA2-512SUMS](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/SHA2-512SUMS)|GNU-style SHA512 sums
+[SHA2-512SUMS.sig](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/SHA2-512SUMS.sig)|GPG signature file for SHA512 sums
 [SHA2-256SUMS](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/SHA2-256SUMS)|GNU-style SHA256 sums
+[SHA2-256SUMS.sig](https://github.com/observeroftime02/yt-dlp-daily/releases/latest/download/SHA2-256SUMS.sig)|GPG signature file for SHA256 sums
+
+The public key that can be used to verify the GPG signatures is [available here](https://github.com/observeroftime02/yt-dlp-daily/blob/master/observeroftime02_0x519EA8F3_public.asc)
+Example usage:
+```
+curl -L https://github.com/yt-dlp/yt-dlp/raw/master/public.key | gpg --import
+gpg --verify SHA2-256SUMS.sig SHA2-256SUMS
+gpg --verify SHA2-512SUMS.sig SHA2-512SUMS
+```
+
+#### Licensing
+
+While yt-dlp is licensed under the [Unlicense](LICENSE), many of the release files contain code from other projects with different licenses.
+
+Most notably, the PyInstaller-bundled executables include GPLv3+ licensed code, and as such the combined work is licensed under [GPLv3+](https://www.gnu.org/licenses/gpl-3.0.html).
+
+See [THIRD_PARTY_LICENSES.txt](THIRD_PARTY_LICENSES.txt) for details.
+
+The zipimport binary (`yt-dlp`), the source tarball (`yt-dlp.tar.gz`), and the PyPI source distribution & wheel only contain code licensed under the [Unlicense](LICENSE).
+
 <!-- MANPAGE: END EXCLUDED SECTION -->
 
 
