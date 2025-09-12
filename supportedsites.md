@@ -1009,6 +1009,7 @@ The only reliable way to check if a site is supported is to try it.
  - **onet.tv:channel**
  - **OnetMVP**
  - **OnionStudios**
+ - **onsen**: [*onsen*](## "netrc machine") インターネットラジオステーション＜音泉＞
  - **Opencast**
  - **OpencastPlaylist**
  - **openrec**
@@ -1069,8 +1070,6 @@ The only reliable way to check if a site is supported is to try it.
  - **PinterestCollection**
  - **PiramideTV**
  - **PiramideTVChannel**
- - **pixiv:sketch**
- - **pixiv:​sketch:user**
  - **PlanetMarathi**
  - **Platzi**: [*platzi*](## "netrc machine")
  - **PlatziCourse**: [*platzi*](## "netrc machine")
@@ -1257,7 +1256,6 @@ The only reliable way to check if a site is supported is to try it.
  - **rutube:person**: Rutube person videos
  - **rutube:playlist**: Rutube playlists
  - **rutube:tags**: Rutube tags
- - **RUTV**: RUTV.RU
  - **Ruutu**: (**Currently broken**)
  - **Ruv**
  - **ruv.is:spila**
@@ -1332,7 +1330,10 @@ The only reliable way to check if a site is supported is to try it.
  - **Slideshare**
  - **SlidesLive**
  - **Slutload**
- - **Smotrim**
+ - **smotrim**
+ - **smotrim:audio**
+ - **smotrim:live**
+ - **smotrim:playlist**
  - **SnapchatSpotlight**
  - **Snotr**
  - **SoftWhiteUnderbelly**: [*softwhiteunderbelly*](## "netrc machine")
@@ -1516,9 +1517,10 @@ The only reliable way to check if a site is supported is to try it.
  - **tubitv**: [*tubitv*](## "netrc machine")
  - **tubitv:series**
  - **Tumblr**: [*tumblr*](## "netrc machine")
- - **TuneInPodcast**
- - **TuneInPodcastEpisode**
- - **TuneInStation**
+ - **tunein:embed**
+ - **tunein:podcast**
+ - **tunein:​podcast:program**
+ - **tunein:station**
  - **tv.dfb.de**
  - **TV2**
  - **TV2Article**
@@ -1600,7 +1602,6 @@ The only reliable way to check if a site is supported is to try it.
  - **Varzesh3**: (**Currently broken**)
  - **Vbox7**
  - **Veo**
- - **Vesti**: Вести.Ru (**Currently broken**)
  - **Vevo**
  - **VevoPlaylist**
  - **VGTV**: VGTV, BTTV, FTV, Aftenposten and Aftonbladet
