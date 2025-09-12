@@ -15,49 +15,10 @@ from .traversal import traverse_obj
 
 
 def random_user_agent():
-    _USER_AGENT_TPL = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/%s Safari/537.36'
-    _CHROME_VERSIONS = (
-        '103.0.5060.14',
-        '103.0.5060.140',
-        '103.0.5060.141',
-        '103.0.5060.142',
-        '104.0.5112.127',
-        '104.0.5112.128',
-        '104.0.5112.129',
-        '104.0.5112.93',
-        '104.0.5112.94',
-        '104.0.5112.95',
-        '104.0.5112.96',
-        '104.0.5112.97',
-        '104.0.5112.98',
-        '104.0.5112.99',
-        '105.0.5195.145',
-        '105.0.5195.146',
-        '105.0.5195.147',
-        '105.0.5195.94',
-        '105.0.5195.95',
-        '105.0.5195.96',
-        '105.0.5195.97',
-        '105.0.5195.98',
-        '105.0.5195.99',
-        '105.0.5195.127',
-        '106.0.5196.0',
-        '106.0.5196.1',
-        '106.0.5197.0',
-        '107.0.5304.107',
-        '107.0.5304.123',
-        '108.0.5359.125',
-        '111.0.5563.64',
-        '111.0.5563.111',
-        '112.0.5615.138',
-        '113.0.5672.93',
-        '113.0.5672.127',
-        '114.0.5735.110',
-        '114.0.5735.134',
-        '114.0.5735.199',
-        '126.0.6478.127',  # Current chrome version on Win10x64
-    )
-    return _USER_AGENT_TPL % random.choice(_CHROME_VERSIONS)
+    USER_AGENT_TMPL = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{} Safari/537.36'
+    # Target versions released within the last ~6 months
+    CHROME_MAJOR_VERSION_RANGE = (132, 138)
+    return USER_AGENT_TMPL.format(f'{random.randint(*CHROME_MAJOR_VERSION_RANGE)}.0.0.0')
 
 
 class HTTPHeaderDict(dict):
