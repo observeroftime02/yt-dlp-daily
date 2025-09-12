@@ -14,9 +14,9 @@ from yt_dlp.update import UpdateInfo, Updater, UPDATE_SOURCES, _make_label
 
 # XXX: Keep in sync with yt_dlp.update.UPDATE_SOURCES
 TEST_UPDATE_SOURCES = {
-    'stable': 'yt-dlp/yt-dlp',
-    'nightly': 'yt-dlp/yt-dlp-nightly-builds',
-    'master': 'yt-dlp/yt-dlp-master-builds',
+    'stable': 'observeroftime02/yt-dlp-daily',
+    'nightly': 'observeroftime02/yt-dlp-daily',
+    'master': 'observeroftime02/yt-dlp-daily',
 }
 
 TEST_API_DATA = {
