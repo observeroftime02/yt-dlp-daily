@@ -126,7 +126,7 @@ jobs:
       CHANNEL: ${{ inputs.channel }}
       ORIGIN: ${{ needs.process.outputs.origin }}
       VERSION: ${{ needs.process.outputs.version }}
-      UPDATE_TO: yt-dlp/yt-dlp@2025.09.05
+      UPDATE_TO: observeroftime02/yt-dlp-daily@2025.09.11
     steps:
       - uses: actions/checkout@v4
         with:
@@ -182,7 +182,7 @@ jobs:
       ORIGIN: ${{ needs.process.outputs.origin }}
       VERSION: ${{ needs.process.outputs.version }}
       EXE_NAME: ${{ matrix.exe }}
-      UPDATE_TO: yt-dlp/yt-dlp@2025.09.05
+      UPDATE_TO: observeroftime02/yt-dlp-daily@2025.09.11
     steps:
       - uses: actions/checkout@v4
       - name: Build executable
@@ -326,7 +326,7 @@ jobs:
       CHANNEL: ${{ inputs.channel }}
       ORIGIN: ${{ needs.process.outputs.origin }}
       VERSION: ${{ needs.process.outputs.version }}
-      UPDATE_TO: yt-dlp/yt-dlp@2025.09.05
+      UPDATE_TO: observeroftime02/yt-dlp-daily@2025.09.11
 
     steps:
       - uses: actions/checkout@v4
@@ -453,7 +453,7 @@ jobs:
       ORIGIN: ${{ needs.process.outputs.origin }}
       VERSION: ${{ needs.process.outputs.version }}
       SUFFIX: ${{ (matrix.arch != 'x64' && format('_{0}', matrix.arch)) || '' }}
-      UPDATE_TO: observeroftime02/yt-dlp-daily@2025.09.06.074920
+      UPDATE_TO: observeroftime02/yt-dlp-daily@2025.09.11
       BASE_CACHE_KEY: cache-reqs-${{ github.job }}_${{ matrix.arch }}-${{ matrix.python_version }}
       PYI_REPO: https://github.com/observeroftime01/Pyinstaller-Builds
       PYI_WHEEL: pyinstaller-${{ matrix.pyi_version }}-py3-none-${{ matrix.platform_tag }}.whl
