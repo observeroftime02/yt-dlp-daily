@@ -36,7 +36,7 @@ if [ -n "${SKIP_UPDATE_TO:-}" ] || [ -n "${TEST_ONEDIR_BUILD:-}" ]; then
 fi
 
 if [ -z "${UPDATE_TO:-}" ]; then
-    UPDATE_TO="yt-dlp/yt-dlp@2025.09.05"
+    UPDATE_TO="observeroftime02/yt-dlp-daily@2025.09.11"
 fi
 
 cp "./${EXE_NAME}" "./${EXE_NAME}_downgraded"

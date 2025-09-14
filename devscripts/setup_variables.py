@@ -10,7 +10,7 @@ import json
 from devscripts.utils import calculate_version
 
 
-STABLE_REPOSITORY = 'yt-dlp/yt-dlp'
+STABLE_REPOSITORY = 'observeroftime02/yt-dlp-daily'
 
 
 def setup_variables(environment):
