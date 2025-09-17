@@ -271,7 +271,7 @@ class TestUpdate(unittest.TestCase):
         test('fork/yt-dlp-satellite@pr987', UpdateInfo(
             'pr987', version=None, requested_version=None, commit='2' * 40))
         test('yt-dlp/yt-dlp', None, current_version='2024.01.01')
-        test('stable', UpdateInfo(
+        test('master', UpdateInfo(
             '2023.12.31', version='2023.12.31', requested_version='2023.12.31', commit='b' * 40))
         test('nightly', UpdateInfo(
             '2023.12.31.123456', version='2023.12.31.123456', requested_version='2023.12.31.123456', commit='c' * 40))
@@ -281,12 +281,11 @@ class TestUpdate(unittest.TestCase):
         test('testing', UpdateInfo('testing', commit='9' * 40))
 
     def test_make_label(self):
-        STABLE_REPO = UPDATE_SOURCES['stable']
         NIGHTLY_REPO = UPDATE_SOURCES['nightly']
         MASTER_REPO = UPDATE_SOURCES['master']
 
         for inputs, expected in [
-            ([MASTER_REPO, '2025.09.02', '2025.09.02'], f'stable@2025.09.02 from {MASTER_REPO}'),
+            ([MASTER_REPO, '2025.09.02', '2025.09.02'], f'master@2025.09.02 from {MASTER_REPO}'),
             ([NIGHTLY_REPO, '2025.09.02.123456', '2025.09.02.123456'], f'nightly@2025.09.02.123456 from {NIGHTLY_REPO}'),
             ([MASTER_REPO, '2025.09.02.987654', '2025.09.02.987654'], f'master@2025.09.02.987654 from {MASTER_REPO}'),
             (['fork/yt-dlp', 'experimental', '2025.12.31.000000'], 'fork/yt-dlp@experimental build 2025.12.31.000000'),
