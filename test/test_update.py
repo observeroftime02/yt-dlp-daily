@@ -281,7 +281,7 @@ class TestUpdate(unittest.TestCase):
         test('testing', UpdateInfo('testing', commit='9' * 40))
 
     def test_make_label(self):
-        STABLE_REPO = UPDATE_SOURCES['stable']
+        STABLE_REPO = UPDATE_SOURCES['master']
         NIGHTLY_REPO = UPDATE_SOURCES['nightly']
         MASTER_REPO = UPDATE_SOURCES['master']
 
