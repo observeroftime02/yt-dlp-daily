@@ -4,6 +4,34 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2025.11.02
+
+#### Core changes
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/b492c7500e83d8e3c89cfb50eef3bebcec34035f) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/2474c966e9241ffddd98eb454672a1d5a2171fa6) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/886de89d7852a0d2870839d45b4c33aa84ba7d7a) by [pukkandan](https://github.com/pukkandan)
+- [resolve conflicts](https://github.com/yt-dlp/yt-dlp/commit/9da5ca803485caf03907aea04f3dbb4c5fcf0921) by [pukkandan](https://github.com/pukkandan)
+- [resolve conflicts](https://github.com/yt-dlp/yt-dlp/commit/9e4f9aebf15372a577c25a1669571fb75aba103b) by [pukkandan](https://github.com/pukkandan)
+- **sponsorblock**: [Add `hook` category](https://github.com/yt-dlp/yt-dlp/commit/52f3c56e83bbb25eec2496b0499768753732a093) ([#14845](https://github.com/yt-dlp/yt-dlp/issues/14845)) by [seproDev](https://github.com/seproDev)
+- **update**: [Fix PyInstaller onedir variant detection](https://github.com/yt-dlp/yt-dlp/commit/1c2ad94353d1c9e03615d20b6bbfc293286c7a32) ([#14800](https://github.com/yt-dlp/yt-dlp/issues/14800)) by [bashonly](https://github.com/bashonly)
+
+#### Extractor changes
+- **ardaudiothek**: [Add extractors](https://github.com/yt-dlp/yt-dlp/commit/0046fbcbfceee32fa2f68a8ea00cca02765470b6) ([#14309](https://github.com/yt-dlp/yt-dlp/issues/14309)) by [evilpie](https://github.com/evilpie), [marieell](https://github.com/marieell)
+- **discoverynetworksde**: [Fix extraction](https://github.com/yt-dlp/yt-dlp/commit/10dea209d2460daf924c93835ddc2f0301cf2cd4) ([#14818](https://github.com/yt-dlp/yt-dlp/issues/14818)) by [dirkf](https://github.com/dirkf), [w4grfw](https://github.com/w4grfw)
+- **googledrive**
+    - [Fix subtitles extraction](https://github.com/yt-dlp/yt-dlp/commit/6d05cee4df30774ddce5c5c751fd2118f40c24fe) ([#14809](https://github.com/yt-dlp/yt-dlp/issues/14809)) by [seproDev](https://github.com/seproDev)
+    - [Rework extractor](https://github.com/yt-dlp/yt-dlp/commit/70f1098312fe53bc85358f7bd624370878b2fa28) ([#14746](https://github.com/yt-dlp/yt-dlp/issues/14746)) by [seproDev](https://github.com/seproDev)
+- **kika**: [Do not extract non-existent subtitles](https://github.com/yt-dlp/yt-dlp/commit/79f9232ffbd57dde91c372b673b42801edaa9e53) ([#14813](https://github.com/yt-dlp/yt-dlp/issues/14813)) by [InvalidUsernameException](https://github.com/InvalidUsernameException)
+- **nbc**: [Detect and discard DRM formats](https://github.com/yt-dlp/yt-dlp/commit/ee3a106f34124f0e2d28f062f5302863fd7639be) ([#14844](https://github.com/yt-dlp/yt-dlp/issues/14844)) by [bashonly](https://github.com/bashonly)
+- **urplay**: [Fix extractor](https://github.com/yt-dlp/yt-dlp/commit/808b1fed76fbd07840cc23a346c11334e3d34f43) ([#14785](https://github.com/yt-dlp/yt-dlp/issues/14785)) by [seproDev](https://github.com/seproDev)
+- **web.archive**: youtube: [Fix extractor](https://github.com/yt-dlp/yt-dlp/commit/d9e3011fd1c3a75871a50e78533afe78ad427ce3) ([#14753](https://github.com/yt-dlp/yt-dlp/issues/14753)) by [seproDev](https://github.com/seproDev)
+- **youtube**
+    - [Fix `web_embedded` client extraction](https://github.com/yt-dlp/yt-dlp/commit/d6ee67725397807bbb5edcd0b2c94f5bca62d3f4) ([#14843](https://github.com/yt-dlp/yt-dlp/issues/14843)) by [bashonly](https://github.com/bashonly), [seproDev](https://github.com/seproDev)
+    - [Implement external n/sig solver](https://github.com/yt-dlp/yt-dlp/commit/6224a3898821965a7d6a2cb9cc2de40a0fd6e6bc) ([#14157](https://github.com/yt-dlp/yt-dlp/issues/14157)) by [bashonly](https://github.com/bashonly), [coletdjnz](https://github.com/coletdjnz), [Grub4K](https://github.com/Grub4K), [seproDev](https://github.com/seproDev) (With fixes in [ee98be4](https://github.com/yt-dlp/yt-dlp/commit/ee98be4ad767b77e4d8dd9bfd3c7d10f2e8397ff), [c0c9f30](https://github.com/yt-dlp/yt-dlp/commit/c0c9f30695db314df084e8701a7c376eb54f283c), [cacd163](https://github.com/yt-dlp/yt-dlp/commit/cacd1630a1a59e92f857d0d175c8730cffbf9801) by [bashonly](https://github.com/bashonly), [coletdjnz](https://github.com/coletdjnz), [seproDev](https://github.com/seproDev))
+
+#### Misc. changes
+- **devscripts**: [Improve `install_deps` script](https://github.com/yt-dlp/yt-dlp/commit/73922e66e437fb4bb618bdc119a96375081bf508) ([#14766](https://github.com/yt-dlp/yt-dlp/issues/14766)) by [bashonly](https://github.com/bashonly)
+
 ### 2025.10.22
 
 #### Important changes
