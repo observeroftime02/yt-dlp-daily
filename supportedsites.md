@@ -93,6 +93,8 @@ The only reliable way to check if a site is supported is to try it.
  - **archive.org**: archive.org video and audio
  - **ArcPublishing**
  - **ARD**
+ - **ARDAudiothek**
+ - **ARDAudiothekPlaylist**
  - **ARDMediathek**
  - **ARDMediathekCollection**
  - **Art19**
@@ -858,6 +860,7 @@ The only reliable way to check if a site is supported is to try it.
  - **n-tv.de**
  - **N1Info:article**
  - **N1InfoAsset**
+ - **NascarClassics**
  - **Nate**
  - **NateProgram**
  - **natgeo:video**
