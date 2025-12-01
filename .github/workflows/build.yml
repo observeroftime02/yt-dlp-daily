@@ -421,23 +421,23 @@ jobs:
           runner: windows-2025
           python_version: '3.10'
           platform_tag: win_amd64
-          pyi_version: '6.16.0'
-          pyi_tag: '2025.09.14.024039'
-          pyi_hash: 800ceae6d80310a6f5c5b91aad5b58cb163c4676592ef542a9f702607aefe31d
+          pyi_version: '6.17.0'
+          pyi_tag: '2025.12.01.082547'
+          pyi_hash: c10df5d3e5d66570d8b9df1a1fd99080882f9cb85f4e4546fc58217d7abe363b
         - arch: 'x86'
           runner: windows-2025
           python_version: '3.10'
           platform_tag: win32
-          pyi_version: '6.16.0'
-          pyi_tag: '2025.09.14.024039'
-          pyi_hash: fc3d8eb6a76cf60585bed129e7071e0a882bfb8d9db536e9a45b754694a0c131
+          pyi_version: '6.17.0'
+          pyi_tag: '2025.12.01.082547'
+          pyi_hash: 071222b5be65b27d4cb14bdf5c6726a1754cbf600df04011b8ee30af43fda7a0
         - arch: 'arm64'
           runner: windows-11-arm
           python_version: '3.13'  # arm64 only has Python >= 3.11 available
           platform_tag: win_arm64
-          pyi_version: '6.16.0'
-          pyi_tag: '2025.09.14.024039'
-          pyi_hash: f9a60202e2a5c88726aa908838158f75c75429e69a9d1e8441af676cc0b8bb4c
+          pyi_version: '6.17.0'
+          pyi_tag: '2025.12.01.082547'
+          pyi_hash: e0b680c8c2802737b448a6293672d6c077d138bbfb3b2f061345d8711fea7a49
     env:
       CHANNEL: ${{ inputs.channel }}
       ORIGIN: ${{ needs.process.outputs.origin }}
