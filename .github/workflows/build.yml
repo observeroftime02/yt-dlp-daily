@@ -193,7 +193,8 @@ jobs:
       CHANNEL: ${{ inputs.channel }}
       ORIGIN: ${{ needs.process.outputs.origin }}
       VERSION: ${{ needs.process.outputs.version }}
-      UPDATE_TO: observeroftime02/yt-dlp-daily@2025.09.11
+      UPDATE_TO: yt-dlp/yt-dlp@2025.09.05
+
     steps:
       - uses: actions/checkout@v5
         with:
@@ -316,7 +317,7 @@ jobs:
       CHANNEL: ${{ inputs.channel }}
       ORIGIN: ${{ needs.process.outputs.origin }}
       VERSION: ${{ needs.process.outputs.version }}
-      UPDATE_TO: observeroftime02/yt-dlp-daily@2025.09.11
+      UPDATE_TO: yt-dlp/yt-dlp@2025.09.05
 
     steps:
       - uses: actions/checkout@v5
@@ -422,30 +423,30 @@ jobs:
           python_version: '3.10'
           platform_tag: win_amd64
           pyi_version: '6.17.0'
-          pyi_tag: '2025.12.01.082547'
-          pyi_hash: c10df5d3e5d66570d8b9df1a1fd99080882f9cb85f4e4546fc58217d7abe363b
+          pyi_tag: '2025.11.29.054325'
+          pyi_hash: e28cc13e4ad0cc74330d832202806d0c1976e9165da6047309348ca663c0ed3d
         - arch: 'x86'
           runner: windows-2025
           python_version: '3.10'
           platform_tag: win32
           pyi_version: '6.17.0'
-          pyi_tag: '2025.12.01.082547'
-          pyi_hash: 071222b5be65b27d4cb14bdf5c6726a1754cbf600df04011b8ee30af43fda7a0
+          pyi_tag: '2025.11.29.054325'
+          pyi_hash: c00f600c17de3bdd589f043f60ab64fc34fcba6dd902ad973af9c8afc74f80d1
         - arch: 'arm64'
           runner: windows-11-arm
           python_version: '3.13'  # arm64 only has Python >= 3.11 available
           platform_tag: win_arm64
           pyi_version: '6.17.0'
-          pyi_tag: '2025.12.01.082547'
-          pyi_hash: e0b680c8c2802737b448a6293672d6c077d138bbfb3b2f061345d8711fea7a49
+          pyi_tag: '2025.11.29.054325'
+          pyi_hash: a2033b18b4f7bc6108b5fd76a92c6c1de0a12ec4fe98a23396a9f978cb4b7d7b
     env:
       CHANNEL: ${{ inputs.channel }}
       ORIGIN: ${{ needs.process.outputs.origin }}
       VERSION: ${{ needs.process.outputs.version }}
       SUFFIX: ${{ (matrix.arch != 'x64' && format('_{0}', matrix.arch)) || '' }}
-      UPDATE_TO: observeroftime02/yt-dlp-daily@2025.09.11
+      UPDATE_TO: yt-dlp/yt-dlp@2025.09.05
       BASE_CACHE_KEY: cache-reqs-${{ github.job }}_${{ matrix.arch }}-${{ matrix.python_version }}
-      PYI_REPO: https://github.com/observeroftime01/Pyinstaller-Builds
+      PYI_REPO: https://github.com/yt-dlp/Pyinstaller-Builds
       PYI_WHEEL: pyinstaller-${{ matrix.pyi_version }}-py3-none-${{ matrix.platform_tag }}.whl
 
     steps:
