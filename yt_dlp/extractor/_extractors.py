@@ -84,6 +84,7 @@ from .agora import (
 )
 from .airtv import AirTVIE
 from .aitube import AitubeKZVideoIE
+from .alibaba import AlibabaIE
 from .aliexpress import AliExpressLiveIE
 from .aljazeera import AlJazeeraIE
 from .allocine import AllocineIE
@@ -637,6 +638,7 @@ from .fc2 import (
 )
 from .fczenit import FczenitIE
 from .fifa import FifaIE
+from .filmarchiv import FilmArchivIE
 from .filmon import (
     FilmOnChannelIE,
     FilmOnIE,
@@ -1311,12 +1313,6 @@ from .newgrounds import (
 )
 from .newspicks import NewsPicksIE
 from .newsy import NewsyIE
-from .nextmedia import (
-    AppleDailyIE,
-    NextMediaActionNewsIE,
-    NextMediaIE,
-    NextTVIE,
-)
 from .nexx import (
     NexxEmbedIE,
     NexxIE,
