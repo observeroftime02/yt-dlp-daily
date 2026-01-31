@@ -196,12 +196,12 @@ jobs:
       VERSION: ${{ needs.process.outputs.version }}
       UPDATE_TO: observeroftime02/yt-dlp-daily@2025.09.11
     steps:
-      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8  # v6.0.1
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
         with:
           fetch-depth: 0  # Needed for changelog
           persist-credentials: false
 
-      - uses: actions/setup-python@83679a892e2d95755f2dac6acb0bfd1e9ac5d548  # v6.1.0
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405  # v6.2.0
         with:
           python-version: "3.10"
 
@@ -260,7 +260,7 @@ jobs:
       SKIP_ONEFILE_BUILD: ${{ (!matrix.onefile && '1') || '' }}
 
     steps:
-      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8  # v6.0.1
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
         with:
           persist-credentials: false
 
@@ -314,7 +314,7 @@ jobs:
       UPDATE_TO: observeroftime02/yt-dlp-daily@2025.09.11
 
     steps:
-      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8  # v6.0.1
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
         with:
           persist-credentials: false
 
@@ -406,23 +406,23 @@ jobs:
           runner: windows-2025
           python_version: '3.10'
           platform_tag: win_amd64
-          pyi_version: '6.17.0'
-          pyi_tag: '2025.12.01.082547'
-          pyi_hash: c10df5d3e5d66570d8b9df1a1fd99080882f9cb85f4e4546fc58217d7abe363b
+          pyi_version: '6.18.0'
+          pyi_tag: '2026.01.31.093723'
+          pyi_hash: b16805ea30d25b546924bf858373c55e9d7927cb52b85088d8279eaca5f13748
         - arch: 'x86'
           runner: windows-2025
           python_version: '3.10'
           platform_tag: win32
-          pyi_version: '6.17.0'
-          pyi_tag: '2025.12.01.082547'
-          pyi_hash: 071222b5be65b27d4cb14bdf5c6726a1754cbf600df04011b8ee30af43fda7a0
+          pyi_version: '6.18.0'
+          pyi_tag: '2026.01.31.093723'
+          pyi_hash: a0fcfb93d45229758bfd4fe2b7f51f9a04fdec7b213739729d26fa9859b792a0
         - arch: 'arm64'
           runner: windows-11-arm
           python_version: '3.13'  # arm64 only has Python >= 3.11 available
           platform_tag: win_arm64
-          pyi_version: '6.17.0'
-          pyi_tag: '2025.12.01.082547'
-          pyi_hash: e0b680c8c2802737b448a6293672d6c077d138bbfb3b2f061345d8711fea7a49
+          pyi_version: '6.18.0'
+          pyi_tag: '2026.01.31.093723'
+          pyi_hash: 2dfc37afee3764b91a19245cb42ac4d91e2cf9721e2d70897656e96aa1e3d29c
     env:
       CHANNEL: ${{ inputs.channel }}
       ORIGIN: ${{ needs.process.outputs.origin }}
@@ -434,11 +434,11 @@ jobs:
       PYI_WHEEL: pyinstaller-${{ matrix.pyi_version }}-py3-none-${{ matrix.platform_tag }}.whl
 
     steps:
-      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8  # v6.0.1
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
         with:
           persist-credentials: false
 
-      - uses: actions/setup-python@83679a892e2d95755f2dac6acb0bfd1e9ac5d548  # v6.1.0
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405  # v6.2.0
         with:
           python-version: ${{ matrix.python_version }}
           architecture: ${{ matrix.arch }}
