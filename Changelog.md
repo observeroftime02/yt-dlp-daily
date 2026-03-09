@@ -4,6 +4,13 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2026.03.09.024738
+
+#### Core changes
+- [Add new public key](https://github.com/yt-dlp/yt-dlp/commit/f812bdb0b532f52930d4ac4ccd309fcb40368635) by [pukkandan](https://github.com/pukkandan)
+- [Delete observeroftime02_0x519EA8F3_public.asc](https://github.com/yt-dlp/yt-dlp/commit/a3e3fa0baee823e58b4f5e8090cecda6cb2ec5ca) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/89180b7fc9eeca0c9d586b5401bf9228c5a39d4b) by [pukkandan](https://github.com/pukkandan)
+
 ### 2026.03.03
 
 #### Extractor changes
