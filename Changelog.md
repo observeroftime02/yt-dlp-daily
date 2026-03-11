@@ -4,6 +4,20 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2026.03.11.013731
+
+#### Core changes
+- [Add new public key](https://github.com/yt-dlp/yt-dlp/commit/f812bdb0b532f52930d4ac4ccd309fcb40368635) by [pukkandan](https://github.com/pukkandan)
+- [Delete observeroftime02_0x519EA8F3_public.asc](https://github.com/yt-dlp/yt-dlp/commit/a3e3fa0baee823e58b4f5e8090cecda6cb2ec5ca) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/89180b7fc9eeca0c9d586b5401bf9228c5a39d4b) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/33fdcf8f584100994b01292446b1556be308efee) by [pukkandan](https://github.com/pukkandan)
+
+#### Extractor changes
+- **youtube**
+    - [Fix `android_vr` player client](https://github.com/yt-dlp/yt-dlp/commit/ff459e5fc04b1a061212672626b7bfa23ff3cdcd) ([#16168](https://github.com/yt-dlp/yt-dlp/issues/16168)) by [gamer191](https://github.com/gamer191)
+    - [Fix `use_ad_playback_context` extractor-arg](https://github.com/yt-dlp/yt-dlp/commit/7e145ac1cae8f891e18c9375fa23097f1dfa0b19) ([#16196](https://github.com/yt-dlp/yt-dlp/issues/16196)) by [bashonly](https://github.com/bashonly)
+    - [Fix `web_embedded` player client](https://github.com/yt-dlp/yt-dlp/commit/f2bd3202c0ffa3f0c0069c44ca53b625dca568bc) ([#16177](https://github.com/yt-dlp/yt-dlp/issues/16177)) by [bashonly](https://github.com/bashonly), [SparseOrnament15](https://github.com/SparseOrnament15)
+
 ### 2026.03.03
 
 #### Extractor changes
