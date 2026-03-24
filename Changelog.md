@@ -4,6 +4,17 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2026.03.24.223522
+
+#### Core changes
+- [Merge branch 'yt-dlp-master'](https://github.com/yt-dlp/yt-dlp/commit/3af97eede2f1294a1c945b31f9a4e9f1d5903c80) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/ef4ae7266d2c08502ad38e9ae26dc3807ffddc69) by [pukkandan](https://github.com/pukkandan)
+- [resolve conflict](https://github.com/yt-dlp/yt-dlp/commit/9d3e858e5eda55865a806d08a194485169fe506c) by [pukkandan](https://github.com/pukkandan)
+- [resolve conflict in build](https://github.com/yt-dlp/yt-dlp/commit/9b3169a83dbbcb8cd86ea097153681a9a28f16e9) by [pukkandan](https://github.com/pukkandan)
+
+#### Extractor changes
+- **rtp**: [Support multi-part episodes and `--no-playlist`](https://github.com/yt-dlp/yt-dlp/commit/f01e1a1ced581c13f28c7da45eb6396cb9fff6e4) ([#16299](https://github.com/yt-dlp/yt-dlp/issues/16299)) by [bashonly](https://github.com/bashonly)
+
 ### 2026.03.17
 
 #### Extractor changes
